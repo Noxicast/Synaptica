@@ -1,0 +1,61 @@
+﻿@page "/login"
+@model Synaptica.Pages.LoginModel
+@{
+    ViewData["Title"] = "Login";
+}
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        height: 100vh;
+        margin: 0;
+        font-family: Arial, sans-serif;
+        padding-top: 50px;
+    }
+
+    .form {
+        color: #393939;
+        text-align: center;
+        padding: 14px 16px;
+        font-size: 17px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        width: 100%;
+        max-width: 400px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        background-color: #f9f9f9;
+    }
+</style>
+
+<div class="form">
+<h2>Login</h2>
+
+<form method="post">
+
+    @Html.AntiForgeryToken()
+    <div>
+        <div>
+            <label for="Email">Email</label>
+        </div>
+        <div style="margin-bottom: 15px">
+            <input type="email" id="Email" name="Email" required/>
+        </div>
+
+
+        <div>
+            <label for="Password">Password</label>
+        </div>
+        <div style="margin-bottom: 15px">
+            <input type="password" id="Password" name="Password" required/>
+        </div>
+        <button type="submit">Login</button>
+    </div>
+
+</form>
+</div>
+
+@if (!string.IsNullOrEmpty(Model.ErrorMessage))
+{
+    <p style="color:red">@Model.ErrorMessage</p>
+}

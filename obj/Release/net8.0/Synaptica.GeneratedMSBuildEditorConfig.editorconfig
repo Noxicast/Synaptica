@@ -17,47 +17,55 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Synaptica
 build_property.RootNamespace = Synaptica
-build_property.ProjectDir = C:\Users\taylo\Source\Repos\SynapticaV4\
+build_property.ProjectDir = C:\Users\taylo\Source\Repos\Synaptica\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\taylo\Source\Repos\SynapticaV4
+build_property.MSBuildProjectDirectory = C:\Users\taylo\Source\Repos\Synaptica
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/taylo/Source/Repos/SynapticaV4/App.razor]
+[C:/Users/taylo/Source/Repos/Synaptica/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/taylo/Source/Repos/SynapticaV4/Pages/Index.razor]
+[C:/Users/taylo/Source/Repos/Synaptica/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/taylo/Source/Repos/SynapticaV4/Shared/SurveyPrompt.razor]
+[C:/Users/taylo/Source/Repos/Synaptica/Shared/SurveyPrompt.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/taylo/Source/Repos/SynapticaV4/_Imports.razor]
+[C:/Users/taylo/Source/Repos/Synaptica/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/taylo/Source/Repos/SynapticaV4/Shared/MainLayout.razor]
+[C:/Users/taylo/Source/Repos/Synaptica/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-uvzv7i10ki
 
-[C:/Users/taylo/Source/Repos/SynapticaV4/Shared/NavMenu.razor]
+[C:/Users/taylo/Source/Repos/Synaptica/Shared/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-zl535izisf
 
-[C:/Users/taylo/Source/Repos/SynapticaV4/Pages/Error.cshtml]
+[C:/Users/taylo/Source/Repos/Synaptica/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/taylo/Source/Repos/SynapticaV4/Pages/_Host.cshtml]
+[C:/Users/taylo/Source/Repos/Synaptica/Pages/login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcbG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/taylo/Source/Repos/Synaptica/Pages/register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNccmVnaXN0ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/taylo/Source/Repos/Synaptica/Pages/_Host.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0hvc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/taylo/Source/Repos/SynapticaV4/Pages/_Layout.cshtml]
+[C:/Users/taylo/Source/Repos/Synaptica/Pages/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0xheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

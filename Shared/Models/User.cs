@@ -3,20 +3,20 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Synaptica.Shared.Models
 {
-    [Table("user")] // Maps to the 'user' table in database
+    [Table("user")] // Maps to the user table in database
     public class User
     {
         [Key]
-        [Column("userId")] // Maps to the 'userId' column in table
+        [Column("userId")] // Maps to the userId column in table
         public int UserId { get; set; }
 
-        [Column("name")] // Maps to the 'name' column
+        [Column("name")] // Maps to the name column
         public string? Name { get; set; }
 
-        [Column("email")] // Maps to the 'email' column
+        [Column("email")] // Maps to the email column
         public string? Email { get; set; }
 
-        [Column("password")] // Maps to the 'password' column
+        [Column("password")] // Maps to the password column
         public string? Password { get; set; }
     }
 }

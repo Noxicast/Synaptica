@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Synaptica")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+14c34d64b24deb139536447797863ee645a168f6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7bf35d8f6b17d98a27bd1c386c280e337cec63ff")]
 [assembly: System.Reflection.AssemblyProductAttribute("Synaptica")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Synaptica")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,38 +1,10 @@
-﻿@page "/"
+﻿@page "/index"
 @using Synaptica.Data
 @using Synaptica.Shared.Models
 @inject SynpaticaDbContext DbContext
+@inject Synaptica.Services.SessionService SessionService
+<h3>This is where we will have our navigation take place including things like quiz, courses things like that</h3>
 
-<h3>Test Database Connection</h3>
+<p>User logged in: @SessionService.LoggedInUser</p>
 
-<button @onclick="FetchUsers">Fetch Users</button>
 
-@if (users != null && users.Any())
-{
-    <ul>
-        @foreach (var user in users)
-        {
-            <li>@user.UserId - @user.Name - @user.Email</li>
-        }
-    </ul>
-}
-else if (isLoading)
-{
-    <p>Loading...</p>
-}
-else
-{
-    <p>No users found.</p>
-}
-
-@code {
-    private List<User>? users;
-    private bool isLoading = false;
-
-    private async Task FetchUsers()
-    {
-        isLoading = true;
-        users = await Task.Run(() => DbContext.Users.ToList());
-        isLoading = false;
-    }
-}
