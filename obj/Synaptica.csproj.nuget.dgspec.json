@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\taylo\\Source\\Repos\\Synaptica\\Synaptica.csproj": {}
+    "C:\\Users\\taylo\\Source\\Repos\\SynapticaBRRR\\Synaptica.csproj": {}
   },
   "projects": {
-    "C:\\Users\\taylo\\Source\\Repos\\Synaptica\\Synaptica.csproj": {
+    "C:\\Users\\taylo\\Source\\Repos\\SynapticaBRRR\\Synaptica.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\taylo\\Source\\Repos\\Synaptica\\Synaptica.csproj",
+        "projectUniqueName": "C:\\Users\\taylo\\Source\\Repos\\SynapticaBRRR\\Synaptica.csproj",
         "projectName": "Synaptica",
-        "projectPath": "C:\\Users\\taylo\\Source\\Repos\\Synaptica\\Synaptica.csproj",
+        "projectPath": "C:\\Users\\taylo\\Source\\Repos\\SynapticaBRRR\\Synaptica.csproj",
         "packagesPath": "C:\\Users\\taylo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\taylo\\Source\\Repos\\Synaptica\\obj\\",
+        "outputPath": "C:\\Users\\taylo\\Source\\Repos\\SynapticaBRRR\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\taylo\\AppData\\Roaming\\NuGet\\NuGet.Config",

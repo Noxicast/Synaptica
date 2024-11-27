@@ -1,15 +1,25 @@
 using System.ComponentModel.DataAnnotations;
-
+using System.ComponentModel.DataAnnotations.Schema;
 namespace Synaptica.Shared.Models;
 
+[Table("question")]
 public class QuizQuestion
 {
     [Key]
-    public int questionId { get; set; }
-    public string? question { get; set; }
-    public string? answer { get; set; }
-    public int quiz_quizId { get; set; }
+    [Column("questionId")]
+    public int QuestionId { get; set; }
 
+    [Column("question")]
+    public string? Question { get; set; }
+
+    [Column("answer")]
+    public string? Answer { get; set; }
+
+    [Column("quiz_quizId")]
+    public int QuizId { get; set; }
+
+
+    [ForeignKey("QuizId")]
     public Quiz? Quiz { get; set; }
 }
 

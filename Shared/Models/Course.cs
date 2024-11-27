@@ -1,9 +1,26 @@
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 namespace Synaptica.Shared.Models;
 
+[Table("course")]
 public class Course {
-	public Guid? courseId { get; set;}
-	public string? title { get; set; }
-	public string? description { get; set; }
-	public string? duration { get; set; }
-	public Guid? instructorId { get; set; }
+	[Key]
+	[Column("courseId")]
+	public int CourseId { get; set;}
+
+    [Column("title")]
+    public string? Title { get; set; }
+
+    [Column("description")]
+    public string? Description { get; set; }
+
+    [Column("duration")]
+    public string? Duration { get; set; }
+
+    [Column("Instructor_InstructorId")]
+    public int InstructorId { get; set; }
+
+
+    [ForeignKey("InstructorId")]  //links instructor idf to the instructor table
+    public Instructor? Instructor { get; set; }
 }

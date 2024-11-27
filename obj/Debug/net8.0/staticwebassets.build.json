@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "TFB9DTFVb2K9jkdbkb1VLnfTXOp1pUlohHBX9Jz8bOA=",
+  "Hash": "4l5EoDe6ES4wUExI26AbPIu20SP440fRTTCxfw6kP2g=",
   "Source": "Synaptica",
   "BasePath": "_content/Synaptica",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "Synaptica\\wwwroot",
       "Source": "Synaptica",
-      "ContentRoot": "C:\\Users\\taylo\\Source\\Repos\\Synaptica\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\taylo\\Source\\Repos\\SynapticaBRRR\\wwwroot\\",
       "BasePath": "_content/Synaptica",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\taylo\\Source\\Repos\\Synaptica\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Synaptica.styles.css",
+      "Identity": "C:\\Users\\taylo\\Source\\Repos\\SynapticaBRRR\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Synaptica.styles.css",
       "SourceId": "Synaptica",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\taylo\\Source\\Repos\\Synaptica\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\taylo\\Source\\Repos\\SynapticaBRRR\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/Synaptica",
       "RelativePath": "Synaptica.styles.css",
       "AssetKind": "All",
@@ -33,13 +33,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\taylo\\Source\\Repos\\Synaptica\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Synaptica.styles.css"
+      "OriginalItemSpec": "C:\\Users\\taylo\\Source\\Repos\\SynapticaBRRR\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Synaptica.styles.css"
     },
     {
-      "Identity": "C:\\Users\\taylo\\Source\\Repos\\Synaptica\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Synaptica.bundle.scp.css",
+      "Identity": "C:\\Users\\taylo\\Source\\Repos\\SynapticaBRRR\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Synaptica.bundle.scp.css",
       "SourceId": "Synaptica",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\taylo\\Source\\Repos\\Synaptica\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\taylo\\Source\\Repos\\SynapticaBRRR\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/Synaptica",
       "RelativePath": "Synaptica.bundle.scp.css",
       "AssetKind": "All",
@@ -52,13 +52,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\taylo\\Source\\Repos\\Synaptica\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Synaptica.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\taylo\\Source\\Repos\\SynapticaBRRR\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Synaptica.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\taylo\\Source\\Repos\\Synaptica\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "Identity": "C:\\Users\\taylo\\Source\\Repos\\SynapticaBRRR\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "SourceId": "Synaptica",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\taylo\\Source\\Repos\\Synaptica\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\taylo\\Source\\Repos\\SynapticaBRRR\\wwwroot\\",
       "BasePath": "_content/Synaptica",
       "RelativePath": "css/bootstrap/bootstrap.min.css",
       "AssetKind": "All",
@@ -74,10 +74,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\taylo\\Source\\Repos\\Synaptica\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\taylo\\Source\\Repos\\SynapticaBRRR\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "SourceId": "Synaptica",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\taylo\\Source\\Repos\\Synaptica\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\taylo\\Source\\Repos\\SynapticaBRRR\\wwwroot\\",
       "BasePath": "_content/Synaptica",
       "RelativePath": "css/bootstrap/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -93,10 +93,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\taylo\\Source\\Repos\\Synaptica\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
+      "Identity": "C:\\Users\\taylo\\Source\\Repos\\SynapticaBRRR\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
       "SourceId": "Synaptica",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\taylo\\Source\\Repos\\Synaptica\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\taylo\\Source\\Repos\\SynapticaBRRR\\wwwroot\\",
       "BasePath": "_content/Synaptica",
       "RelativePath": "css/open-iconic/font/css/open-iconic-bootstrap.min.css",
       "AssetKind": "All",
@@ -112,10 +112,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\taylo\\Source\\Repos\\Synaptica\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "Identity": "C:\\Users\\taylo\\Source\\Repos\\SynapticaBRRR\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
       "SourceId": "Synaptica",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\taylo\\Source\\Repos\\Synaptica\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\taylo\\Source\\Repos\\SynapticaBRRR\\wwwroot\\",
       "BasePath": "_content/Synaptica",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.eot",
       "AssetKind": "All",
@@ -131,10 +131,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot"
     },
     {
-      "Identity": "C:\\Users\\taylo\\Source\\Repos\\Synaptica\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "Identity": "C:\\Users\\taylo\\Source\\Repos\\SynapticaBRRR\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
       "SourceId": "Synaptica",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\taylo\\Source\\Repos\\Synaptica\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\taylo\\Source\\Repos\\SynapticaBRRR\\wwwroot\\",
       "BasePath": "_content/Synaptica",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.otf",
       "AssetKind": "All",
@@ -150,10 +150,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf"
     },
     {
-      "Identity": "C:\\Users\\taylo\\Source\\Repos\\Synaptica\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "Identity": "C:\\Users\\taylo\\Source\\Repos\\SynapticaBRRR\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
       "SourceId": "Synaptica",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\taylo\\Source\\Repos\\Synaptica\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\taylo\\Source\\Repos\\SynapticaBRRR\\wwwroot\\",
       "BasePath": "_content/Synaptica",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.svg",
       "AssetKind": "All",
@@ -169,10 +169,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg"
     },
     {
-      "Identity": "C:\\Users\\taylo\\Source\\Repos\\Synaptica\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "Identity": "C:\\Users\\taylo\\Source\\Repos\\SynapticaBRRR\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
       "SourceId": "Synaptica",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\taylo\\Source\\Repos\\Synaptica\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\taylo\\Source\\Repos\\SynapticaBRRR\\wwwroot\\",
       "BasePath": "_content/Synaptica",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.ttf",
       "AssetKind": "All",
@@ -188,10 +188,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf"
     },
     {
-      "Identity": "C:\\Users\\taylo\\Source\\Repos\\Synaptica\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "Identity": "C:\\Users\\taylo\\Source\\Repos\\SynapticaBRRR\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
       "SourceId": "Synaptica",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\taylo\\Source\\Repos\\Synaptica\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\taylo\\Source\\Repos\\SynapticaBRRR\\wwwroot\\",
       "BasePath": "_content/Synaptica",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.woff",
       "AssetKind": "All",
@@ -207,10 +207,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
     },
     {
-      "Identity": "C:\\Users\\taylo\\Source\\Repos\\Synaptica\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "Identity": "C:\\Users\\taylo\\Source\\Repos\\SynapticaBRRR\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
       "SourceId": "Synaptica",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\taylo\\Source\\Repos\\Synaptica\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\taylo\\Source\\Repos\\SynapticaBRRR\\wwwroot\\",
       "BasePath": "_content/Synaptica",
       "RelativePath": "css/open-iconic/FONT-LICENSE",
       "AssetKind": "All",
@@ -226,10 +226,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\FONT-LICENSE"
     },
     {
-      "Identity": "C:\\Users\\taylo\\Source\\Repos\\Synaptica\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "Identity": "C:\\Users\\taylo\\Source\\Repos\\SynapticaBRRR\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
       "SourceId": "Synaptica",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\taylo\\Source\\Repos\\Synaptica\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\taylo\\Source\\Repos\\SynapticaBRRR\\wwwroot\\",
       "BasePath": "_content/Synaptica",
       "RelativePath": "css/open-iconic/ICON-LICENSE",
       "AssetKind": "All",
@@ -245,10 +245,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\ICON-LICENSE"
     },
     {
-      "Identity": "C:\\Users\\taylo\\Source\\Repos\\Synaptica\\wwwroot\\css\\open-iconic\\README.md",
+      "Identity": "C:\\Users\\taylo\\Source\\Repos\\SynapticaBRRR\\wwwroot\\css\\open-iconic\\README.md",
       "SourceId": "Synaptica",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\taylo\\Source\\Repos\\Synaptica\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\taylo\\Source\\Repos\\SynapticaBRRR\\wwwroot\\",
       "BasePath": "_content/Synaptica",
       "RelativePath": "css/open-iconic/README.md",
       "AssetKind": "All",
@@ -264,10 +264,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\README.md"
     },
     {
-      "Identity": "C:\\Users\\taylo\\Source\\Repos\\Synaptica\\wwwroot\\css\\site.css",
+      "Identity": "C:\\Users\\taylo\\Source\\Repos\\SynapticaBRRR\\wwwroot\\css\\site.css",
       "SourceId": "Synaptica",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\taylo\\Source\\Repos\\Synaptica\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\taylo\\Source\\Repos\\SynapticaBRRR\\wwwroot\\",
       "BasePath": "_content/Synaptica",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -283,10 +283,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\taylo\\Source\\Repos\\Synaptica\\wwwroot\\Data\\Comment.json",
+      "Identity": "C:\\Users\\taylo\\Source\\Repos\\SynapticaBRRR\\wwwroot\\Data\\Comment.json",
       "SourceId": "Synaptica",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\taylo\\Source\\Repos\\Synaptica\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\taylo\\Source\\Repos\\SynapticaBRRR\\wwwroot\\",
       "BasePath": "_content/Synaptica",
       "RelativePath": "Data/Comment.json",
       "AssetKind": "All",
@@ -302,10 +302,10 @@
       "OriginalItemSpec": "wwwroot\\Data\\Comment.json"
     },
     {
-      "Identity": "C:\\Users\\taylo\\Source\\Repos\\Synaptica\\wwwroot\\Data\\Course.json",
+      "Identity": "C:\\Users\\taylo\\Source\\Repos\\SynapticaBRRR\\wwwroot\\Data\\Course.json",
       "SourceId": "Synaptica",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\taylo\\Source\\Repos\\Synaptica\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\taylo\\Source\\Repos\\SynapticaBRRR\\wwwroot\\",
       "BasePath": "_content/Synaptica",
       "RelativePath": "Data/Course.json",
       "AssetKind": "All",
@@ -321,10 +321,10 @@
       "OriginalItemSpec": "wwwroot\\Data\\Course.json"
     },
     {
-      "Identity": "C:\\Users\\taylo\\Source\\Repos\\Synaptica\\wwwroot\\Data\\Enrollement.json",
+      "Identity": "C:\\Users\\taylo\\Source\\Repos\\SynapticaBRRR\\wwwroot\\Data\\Enrollement.json",
       "SourceId": "Synaptica",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\taylo\\Source\\Repos\\Synaptica\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\taylo\\Source\\Repos\\SynapticaBRRR\\wwwroot\\",
       "BasePath": "_content/Synaptica",
       "RelativePath": "Data/Enrollement.json",
       "AssetKind": "All",
@@ -340,10 +340,10 @@
       "OriginalItemSpec": "wwwroot\\Data\\Enrollement.json"
     },
     {
-      "Identity": "C:\\Users\\taylo\\Source\\Repos\\Synaptica\\wwwroot\\Data\\Instructor.json",
+      "Identity": "C:\\Users\\taylo\\Source\\Repos\\SynapticaBRRR\\wwwroot\\Data\\Instructor.json",
       "SourceId": "Synaptica",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\taylo\\Source\\Repos\\Synaptica\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\taylo\\Source\\Repos\\SynapticaBRRR\\wwwroot\\",
       "BasePath": "_content/Synaptica",
       "RelativePath": "Data/Instructor.json",
       "AssetKind": "All",
@@ -359,10 +359,10 @@
       "OriginalItemSpec": "wwwroot\\Data\\Instructor.json"
     },
     {
-      "Identity": "C:\\Users\\taylo\\Source\\Repos\\Synaptica\\wwwroot\\Data\\Notification.json",
+      "Identity": "C:\\Users\\taylo\\Source\\Repos\\SynapticaBRRR\\wwwroot\\Data\\Notification.json",
       "SourceId": "Synaptica",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\taylo\\Source\\Repos\\Synaptica\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\taylo\\Source\\Repos\\SynapticaBRRR\\wwwroot\\",
       "BasePath": "_content/Synaptica",
       "RelativePath": "Data/Notification.json",
       "AssetKind": "All",
@@ -378,10 +378,10 @@
       "OriginalItemSpec": "wwwroot\\Data\\Notification.json"
     },
     {
-      "Identity": "C:\\Users\\taylo\\Source\\Repos\\Synaptica\\wwwroot\\Data\\Quiz.json",
+      "Identity": "C:\\Users\\taylo\\Source\\Repos\\SynapticaBRRR\\wwwroot\\Data\\Quiz.json",
       "SourceId": "Synaptica",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\taylo\\Source\\Repos\\Synaptica\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\taylo\\Source\\Repos\\SynapticaBRRR\\wwwroot\\",
       "BasePath": "_content/Synaptica",
       "RelativePath": "Data/Quiz.json",
       "AssetKind": "All",
@@ -397,10 +397,10 @@
       "OriginalItemSpec": "wwwroot\\Data\\Quiz.json"
     },
     {
-      "Identity": "C:\\Users\\taylo\\Source\\Repos\\Synaptica\\wwwroot\\Data\\QuizQuestion.json",
+      "Identity": "C:\\Users\\taylo\\Source\\Repos\\SynapticaBRRR\\wwwroot\\Data\\QuizQuestion.json",
       "SourceId": "Synaptica",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\taylo\\Source\\Repos\\Synaptica\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\taylo\\Source\\Repos\\SynapticaBRRR\\wwwroot\\",
       "BasePath": "_content/Synaptica",
       "RelativePath": "Data/QuizQuestion.json",
       "AssetKind": "All",
@@ -416,10 +416,10 @@
       "OriginalItemSpec": "wwwroot\\Data\\QuizQuestion.json"
     },
     {
-      "Identity": "C:\\Users\\taylo\\Source\\Repos\\Synaptica\\wwwroot\\Data\\User.json",
+      "Identity": "C:\\Users\\taylo\\Source\\Repos\\SynapticaBRRR\\wwwroot\\Data\\User.json",
       "SourceId": "Synaptica",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\taylo\\Source\\Repos\\Synaptica\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\taylo\\Source\\Repos\\SynapticaBRRR\\wwwroot\\",
       "BasePath": "_content/Synaptica",
       "RelativePath": "Data/User.json",
       "AssetKind": "All",
@@ -435,10 +435,10 @@
       "OriginalItemSpec": "wwwroot\\Data\\User.json"
     },
     {
-      "Identity": "C:\\Users\\taylo\\Source\\Repos\\Synaptica\\wwwroot\\favicon.ico",
+      "Identity": "C:\\Users\\taylo\\Source\\Repos\\SynapticaBRRR\\wwwroot\\favicon.ico",
       "SourceId": "Synaptica",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\taylo\\Source\\Repos\\Synaptica\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\taylo\\Source\\Repos\\SynapticaBRRR\\wwwroot\\",
       "BasePath": "_content/Synaptica",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",

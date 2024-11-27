@@ -1,8 +1,16 @@
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 namespace Synaptica.Shared.Models;
 
+[Table("instructor")]
 public class Instructor {
-	public Guid? instructorId { get; set;}
-	public string? name { get; set; }
-	public string? email { get; set; }
-	public string? password { get; set; }
+    [Key]
+    [Column("instructorId")]
+    public int InstructorId { get; set;}
+
+    [Column("name")]
+    public string? Name { get; set; }
+
+    [Column("email")]
+    public string? Email { get; set; }
 }
