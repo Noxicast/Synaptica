@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Synaptica")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4c7a5a54ced4cedb6ead8f88f0c2f5ff8f433040")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d5b24784cc597ff90781ec5ba51bc4629c2cdfcb")]
 [assembly: System.Reflection.AssemblyProductAttribute("Synaptica")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Synaptica")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
