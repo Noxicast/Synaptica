@@ -54,13 +54,13 @@ namespace Synaptica.Pages
                     return Page();
                 }
                 //when there is a valid user then set the logged in user to their name
-                _sessionService.LoggedInUser = user.Name;
+                _sessionService.LoggedInUser = user.Name; //Should change this to ID in the future
 
                 return Redirect("/index"); // redirects to our home page after login
             }
-            catch (Exception)
+            catch (Exception e)
             { /// here in case something goes wrong 
-                ErrorMessage = "An error occurred during login: ";
+                ErrorMessage = "An error occurred during login: " + e;
                 return Page();
             }
         }

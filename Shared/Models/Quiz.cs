@@ -2,7 +2,7 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 namespace Synaptica.Shared.Models;
 
-[Table("quiz")]
+[Table("Quizzes")]
 public class Quiz {
 	[Key]
 	[Column("quizId")]

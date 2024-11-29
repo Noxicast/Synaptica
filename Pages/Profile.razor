@@ -1,8 +1,16 @@
-﻿@page "/profile"
+﻿@using Synaptica.Data
+@using Synaptica.Shared.Models
+
+@inject SynpaticaDbContext DbContext
+@inject Synaptica.Services.SessionService SessionService
+
+@page "/profile"
 <PageTitle>Profile</PageTitle>
 <h3>Profile</h3>
 <p>Get and display users info like username, email...etc and maybe implement 
     functionality to change them???</p>
+
+<p>User logged in: @SessionService.LoggedInUser</p>
 @code {
 
 }

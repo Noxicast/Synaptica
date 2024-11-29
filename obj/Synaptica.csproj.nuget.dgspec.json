@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\taylo\\Source\\Repos\\SynapticaBRRR\\Synaptica.csproj": {}
+    "P:\\Ecole\\Algonquin_College\\Semester_4\\Software Developpment Project\\Synaptica\\Synaptica.csproj": {}
   },
   "projects": {
-    "C:\\Users\\taylo\\Source\\Repos\\SynapticaBRRR\\Synaptica.csproj": {
+    "P:\\Ecole\\Algonquin_College\\Semester_4\\Software Developpment Project\\Synaptica\\Synaptica.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\taylo\\Source\\Repos\\SynapticaBRRR\\Synaptica.csproj",
+        "projectUniqueName": "P:\\Ecole\\Algonquin_College\\Semester_4\\Software Developpment Project\\Synaptica\\Synaptica.csproj",
         "projectName": "Synaptica",
-        "projectPath": "C:\\Users\\taylo\\Source\\Repos\\SynapticaBRRR\\Synaptica.csproj",
-        "packagesPath": "C:\\Users\\taylo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\taylo\\Source\\Repos\\SynapticaBRRR\\obj\\",
+        "projectPath": "P:\\Ecole\\Algonquin_College\\Semester_4\\Software Developpment Project\\Synaptica\\Synaptica.csproj",
+        "packagesPath": "C:\\Users\\Jonatan Mercier\\.nuget\\packages\\",
+        "outputPath": "P:\\Ecole\\Algonquin_College\\Semester_4\\Software Developpment Project\\Synaptica\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\taylo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Jonatan Mercier\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -39,8 +43,9 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "direct"
-        }
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -88,7 +93,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

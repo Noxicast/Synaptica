@@ -148,97 +148,97 @@
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Data\Comment.json'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"hrtjyrtvzr"},{"Name":"integrity","Value":"sha256-bVsS7z5TZO4li0OYISafjrA9cs/7qbXvXqh5LpBh35E="},{"Name":"label","Value":"_content/Synaptica/Data/Comment.json"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"22"},{"Name":"Content-Type","Value":"application/json"},{"Name":"ETag","Value":"\u0022bVsS7z5TZO4li0OYISafjrA9cs/7qbXvXqh5LpBh35E=\u0022"},{"Name":"Last-Modified","Value":"Mon, 18 Nov 2024 18:48:31 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"22"},{"Name":"Content-Type","Value":"application/json"},{"Name":"ETag","Value":"\u0022bVsS7z5TZO4li0OYISafjrA9cs/7qbXvXqh5LpBh35E=\u0022"},{"Name":"Last-Modified","Value":"Mon, 18 Nov 2024 19:59:27 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Synaptica/Data/Comment.json">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Data\Comment.json'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-bVsS7z5TZO4li0OYISafjrA9cs/7qbXvXqh5LpBh35E="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"22"},{"Name":"Content-Type","Value":"application/json"},{"Name":"ETag","Value":"\u0022bVsS7z5TZO4li0OYISafjrA9cs/7qbXvXqh5LpBh35E=\u0022"},{"Name":"Last-Modified","Value":"Mon, 18 Nov 2024 18:48:31 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"22"},{"Name":"Content-Type","Value":"application/json"},{"Name":"ETag","Value":"\u0022bVsS7z5TZO4li0OYISafjrA9cs/7qbXvXqh5LpBh35E=\u0022"},{"Name":"Last-Modified","Value":"Mon, 18 Nov 2024 19:59:27 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/Synaptica/Data/Course.hrtjyrtvzr.json">
+    <StaticWebAssetEndpoint Include="_content/Synaptica/Data/Course.d7v3iek4sm.json">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Data\Course.json'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"hrtjyrtvzr"},{"Name":"integrity","Value":"sha256-bVsS7z5TZO4li0OYISafjrA9cs/7qbXvXqh5LpBh35E="},{"Name":"label","Value":"_content/Synaptica/Data/Course.json"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"22"},{"Name":"Content-Type","Value":"application/json"},{"Name":"ETag","Value":"\u0022bVsS7z5TZO4li0OYISafjrA9cs/7qbXvXqh5LpBh35E=\u0022"},{"Name":"Last-Modified","Value":"Mon, 18 Nov 2024 18:48:31 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"d7v3iek4sm"},{"Name":"integrity","Value":"sha256-uUo/fHxPsiosrSwKec88D0eYiOGuhO6doiGtcg1D5Zk="},{"Name":"label","Value":"_content/Synaptica/Data/Course.json"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"63"},{"Name":"Content-Type","Value":"application/json"},{"Name":"ETag","Value":"\u0022uUo/fHxPsiosrSwKec88D0eYiOGuhO6doiGtcg1D5Zk=\u0022"},{"Name":"Last-Modified","Value":"Mon, 18 Nov 2024 19:59:27 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Synaptica/Data/Course.json">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Data\Course.json'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-bVsS7z5TZO4li0OYISafjrA9cs/7qbXvXqh5LpBh35E="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"22"},{"Name":"Content-Type","Value":"application/json"},{"Name":"ETag","Value":"\u0022bVsS7z5TZO4li0OYISafjrA9cs/7qbXvXqh5LpBh35E=\u0022"},{"Name":"Last-Modified","Value":"Mon, 18 Nov 2024 18:48:31 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-uUo/fHxPsiosrSwKec88D0eYiOGuhO6doiGtcg1D5Zk="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"63"},{"Name":"Content-Type","Value":"application/json"},{"Name":"ETag","Value":"\u0022uUo/fHxPsiosrSwKec88D0eYiOGuhO6doiGtcg1D5Zk=\u0022"},{"Name":"Last-Modified","Value":"Mon, 18 Nov 2024 19:59:27 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Synaptica/Data/Enrollement.hrtjyrtvzr.json">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Data\Enrollement.json'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"hrtjyrtvzr"},{"Name":"integrity","Value":"sha256-bVsS7z5TZO4li0OYISafjrA9cs/7qbXvXqh5LpBh35E="},{"Name":"label","Value":"_content/Synaptica/Data/Enrollement.json"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"22"},{"Name":"Content-Type","Value":"application/json"},{"Name":"ETag","Value":"\u0022bVsS7z5TZO4li0OYISafjrA9cs/7qbXvXqh5LpBh35E=\u0022"},{"Name":"Last-Modified","Value":"Mon, 18 Nov 2024 18:48:31 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"22"},{"Name":"Content-Type","Value":"application/json"},{"Name":"ETag","Value":"\u0022bVsS7z5TZO4li0OYISafjrA9cs/7qbXvXqh5LpBh35E=\u0022"},{"Name":"Last-Modified","Value":"Mon, 18 Nov 2024 19:59:27 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Synaptica/Data/Enrollement.json">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Data\Enrollement.json'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-bVsS7z5TZO4li0OYISafjrA9cs/7qbXvXqh5LpBh35E="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"22"},{"Name":"Content-Type","Value":"application/json"},{"Name":"ETag","Value":"\u0022bVsS7z5TZO4li0OYISafjrA9cs/7qbXvXqh5LpBh35E=\u0022"},{"Name":"Last-Modified","Value":"Mon, 18 Nov 2024 18:48:31 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"22"},{"Name":"Content-Type","Value":"application/json"},{"Name":"ETag","Value":"\u0022bVsS7z5TZO4li0OYISafjrA9cs/7qbXvXqh5LpBh35E=\u0022"},{"Name":"Last-Modified","Value":"Mon, 18 Nov 2024 19:59:27 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Synaptica/Data/Instructor.hrtjyrtvzr.json">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Data\Instructor.json'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"hrtjyrtvzr"},{"Name":"integrity","Value":"sha256-bVsS7z5TZO4li0OYISafjrA9cs/7qbXvXqh5LpBh35E="},{"Name":"label","Value":"_content/Synaptica/Data/Instructor.json"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"22"},{"Name":"Content-Type","Value":"application/json"},{"Name":"ETag","Value":"\u0022bVsS7z5TZO4li0OYISafjrA9cs/7qbXvXqh5LpBh35E=\u0022"},{"Name":"Last-Modified","Value":"Mon, 18 Nov 2024 18:48:31 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"22"},{"Name":"Content-Type","Value":"application/json"},{"Name":"ETag","Value":"\u0022bVsS7z5TZO4li0OYISafjrA9cs/7qbXvXqh5LpBh35E=\u0022"},{"Name":"Last-Modified","Value":"Mon, 18 Nov 2024 19:59:27 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Synaptica/Data/Instructor.json">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Data\Instructor.json'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-bVsS7z5TZO4li0OYISafjrA9cs/7qbXvXqh5LpBh35E="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"22"},{"Name":"Content-Type","Value":"application/json"},{"Name":"ETag","Value":"\u0022bVsS7z5TZO4li0OYISafjrA9cs/7qbXvXqh5LpBh35E=\u0022"},{"Name":"Last-Modified","Value":"Mon, 18 Nov 2024 18:48:31 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"22"},{"Name":"Content-Type","Value":"application/json"},{"Name":"ETag","Value":"\u0022bVsS7z5TZO4li0OYISafjrA9cs/7qbXvXqh5LpBh35E=\u0022"},{"Name":"Last-Modified","Value":"Mon, 18 Nov 2024 19:59:27 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Synaptica/Data/Notification.hrtjyrtvzr.json">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Data\Notification.json'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"hrtjyrtvzr"},{"Name":"integrity","Value":"sha256-bVsS7z5TZO4li0OYISafjrA9cs/7qbXvXqh5LpBh35E="},{"Name":"label","Value":"_content/Synaptica/Data/Notification.json"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"22"},{"Name":"Content-Type","Value":"application/json"},{"Name":"ETag","Value":"\u0022bVsS7z5TZO4li0OYISafjrA9cs/7qbXvXqh5LpBh35E=\u0022"},{"Name":"Last-Modified","Value":"Mon, 18 Nov 2024 18:48:31 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"22"},{"Name":"Content-Type","Value":"application/json"},{"Name":"ETag","Value":"\u0022bVsS7z5TZO4li0OYISafjrA9cs/7qbXvXqh5LpBh35E=\u0022"},{"Name":"Last-Modified","Value":"Mon, 18 Nov 2024 19:59:27 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Synaptica/Data/Notification.json">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Data\Notification.json'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-bVsS7z5TZO4li0OYISafjrA9cs/7qbXvXqh5LpBh35E="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"22"},{"Name":"Content-Type","Value":"application/json"},{"Name":"ETag","Value":"\u0022bVsS7z5TZO4li0OYISafjrA9cs/7qbXvXqh5LpBh35E=\u0022"},{"Name":"Last-Modified","Value":"Mon, 18 Nov 2024 18:48:31 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"22"},{"Name":"Content-Type","Value":"application/json"},{"Name":"ETag","Value":"\u0022bVsS7z5TZO4li0OYISafjrA9cs/7qbXvXqh5LpBh35E=\u0022"},{"Name":"Last-Modified","Value":"Mon, 18 Nov 2024 19:59:27 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Synaptica/Data/Quiz.hrtjyrtvzr.json">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Data\Quiz.json'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"hrtjyrtvzr"},{"Name":"integrity","Value":"sha256-bVsS7z5TZO4li0OYISafjrA9cs/7qbXvXqh5LpBh35E="},{"Name":"label","Value":"_content/Synaptica/Data/Quiz.json"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"22"},{"Name":"Content-Type","Value":"application/json"},{"Name":"ETag","Value":"\u0022bVsS7z5TZO4li0OYISafjrA9cs/7qbXvXqh5LpBh35E=\u0022"},{"Name":"Last-Modified","Value":"Mon, 18 Nov 2024 18:48:31 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"22"},{"Name":"Content-Type","Value":"application/json"},{"Name":"ETag","Value":"\u0022bVsS7z5TZO4li0OYISafjrA9cs/7qbXvXqh5LpBh35E=\u0022"},{"Name":"Last-Modified","Value":"Mon, 18 Nov 2024 19:59:27 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Synaptica/Data/Quiz.json">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Data\Quiz.json'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-bVsS7z5TZO4li0OYISafjrA9cs/7qbXvXqh5LpBh35E="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"22"},{"Name":"Content-Type","Value":"application/json"},{"Name":"ETag","Value":"\u0022bVsS7z5TZO4li0OYISafjrA9cs/7qbXvXqh5LpBh35E=\u0022"},{"Name":"Last-Modified","Value":"Mon, 18 Nov 2024 18:48:31 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"22"},{"Name":"Content-Type","Value":"application/json"},{"Name":"ETag","Value":"\u0022bVsS7z5TZO4li0OYISafjrA9cs/7qbXvXqh5LpBh35E=\u0022"},{"Name":"Last-Modified","Value":"Mon, 18 Nov 2024 19:59:27 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Synaptica/Data/QuizQuestion.hrtjyrtvzr.json">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Data\QuizQuestion.json'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"hrtjyrtvzr"},{"Name":"integrity","Value":"sha256-bVsS7z5TZO4li0OYISafjrA9cs/7qbXvXqh5LpBh35E="},{"Name":"label","Value":"_content/Synaptica/Data/QuizQuestion.json"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"22"},{"Name":"Content-Type","Value":"application/json"},{"Name":"ETag","Value":"\u0022bVsS7z5TZO4li0OYISafjrA9cs/7qbXvXqh5LpBh35E=\u0022"},{"Name":"Last-Modified","Value":"Mon, 18 Nov 2024 19:36:11 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"22"},{"Name":"Content-Type","Value":"application/json"},{"Name":"ETag","Value":"\u0022bVsS7z5TZO4li0OYISafjrA9cs/7qbXvXqh5LpBh35E=\u0022"},{"Name":"Last-Modified","Value":"Mon, 18 Nov 2024 19:59:27 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Synaptica/Data/QuizQuestion.json">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Data\QuizQuestion.json'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-bVsS7z5TZO4li0OYISafjrA9cs/7qbXvXqh5LpBh35E="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"22"},{"Name":"Content-Type","Value":"application/json"},{"Name":"ETag","Value":"\u0022bVsS7z5TZO4li0OYISafjrA9cs/7qbXvXqh5LpBh35E=\u0022"},{"Name":"Last-Modified","Value":"Mon, 18 Nov 2024 19:36:11 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"22"},{"Name":"Content-Type","Value":"application/json"},{"Name":"ETag","Value":"\u0022bVsS7z5TZO4li0OYISafjrA9cs/7qbXvXqh5LpBh35E=\u0022"},{"Name":"Last-Modified","Value":"Mon, 18 Nov 2024 19:59:27 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Synaptica/Data/User.hrtjyrtvzr.json">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Data\User.json'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"hrtjyrtvzr"},{"Name":"integrity","Value":"sha256-bVsS7z5TZO4li0OYISafjrA9cs/7qbXvXqh5LpBh35E="},{"Name":"label","Value":"_content/Synaptica/Data/User.json"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"22"},{"Name":"Content-Type","Value":"application/json"},{"Name":"ETag","Value":"\u0022bVsS7z5TZO4li0OYISafjrA9cs/7qbXvXqh5LpBh35E=\u0022"},{"Name":"Last-Modified","Value":"Mon, 18 Nov 2024 18:48:31 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"22"},{"Name":"Content-Type","Value":"application/json"},{"Name":"ETag","Value":"\u0022bVsS7z5TZO4li0OYISafjrA9cs/7qbXvXqh5LpBh35E=\u0022"},{"Name":"Last-Modified","Value":"Mon, 18 Nov 2024 19:59:27 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Synaptica/Data/User.json">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Data\User.json'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-bVsS7z5TZO4li0OYISafjrA9cs/7qbXvXqh5LpBh35E="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"22"},{"Name":"Content-Type","Value":"application/json"},{"Name":"ETag","Value":"\u0022bVsS7z5TZO4li0OYISafjrA9cs/7qbXvXqh5LpBh35E=\u0022"},{"Name":"Last-Modified","Value":"Mon, 18 Nov 2024 18:48:31 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"22"},{"Name":"Content-Type","Value":"application/json"},{"Name":"ETag","Value":"\u0022bVsS7z5TZO4li0OYISafjrA9cs/7qbXvXqh5LpBh35E=\u0022"},{"Name":"Last-Modified","Value":"Mon, 18 Nov 2024 19:59:27 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Synaptica/favicon.61n19gt1b8.ico">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\favicon.ico'))</AssetFile>
@@ -256,13 +256,13 @@
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Synaptica.l5pjpmkzyl.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-5yjhXtNX7F6gFrdgNvVKah94O5WdUrfSb4u9eoqs9eU="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"2839"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00225yjhXtNX7F6gFrdgNvVKah94O5WdUrfSb4u9eoqs9eU=\u0022"},{"Name":"Last-Modified","Value":"Mon, 18 Nov 2024 19:42:14 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"2839"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00225yjhXtNX7F6gFrdgNvVKah94O5WdUrfSb4u9eoqs9eU=\u0022"},{"Name":"Last-Modified","Value":"Mon, 18 Nov 2024 19:59:27 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Synaptica/Synaptica.l5pjpmkzyl.bundle.scp.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Synaptica.l5pjpmkzyl.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"l5pjpmkzyl"},{"Name":"integrity","Value":"sha256-5yjhXtNX7F6gFrdgNvVKah94O5WdUrfSb4u9eoqs9eU="},{"Name":"label","Value":"_content/Synaptica/Synaptica.bundle.scp.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2839"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00225yjhXtNX7F6gFrdgNvVKah94O5WdUrfSb4u9eoqs9eU=\u0022"},{"Name":"Last-Modified","Value":"Mon, 18 Nov 2024 19:42:14 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2839"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00225yjhXtNX7F6gFrdgNvVKah94O5WdUrfSb4u9eoqs9eU=\u0022"},{"Name":"Last-Modified","Value":"Mon, 18 Nov 2024 19:59:27 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
   </ItemGroup>
 </Project>

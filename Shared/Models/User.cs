@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Synaptica.Shared.Models
 {
-    [Table("user")] // Maps to the user table in database
+    [Table("Users")] // Maps to the user table in database
     public class User
     {
         [Key]
@@ -20,5 +20,3 @@ namespace Synaptica.Shared.Models
         public string? Password { get; set; }
     }
 }
-
-
