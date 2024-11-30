@@ -7,18 +7,19 @@
 @using Synaptica.Shared.Models
 @using Synaptica.Data
 @using System.Data.SqlTypes
+@using System
 
 @inject SynpaticaDbContext DbContext
 @inject Synaptica.Services.SessionService sessionService
 
 
-<h3>Available Courses (WIP - currently not workign as intended, not loading courses even tho intended should)</h3>
+<h3>Available Courses</h3>
 
-@courses
 @if (courses != null && courses.Count > 0)
 {
-    <p>test</p>
     <div class="course-list">
+
+        <!-- displays available courses in the database with (title,description,Enroll button)-->
         @foreach (var course in courses)
         {
             <div class="course-item">
@@ -31,39 +32,43 @@
     </div>
 }
 else
-{
+{   
     <p>No courses available at the moment.</p>
 }
 
 @code {
-    private List<Course>? courses;
 
+    private List<Course>? courses;
     protected override async Task OnInitializedAsync()
     {
         //TEMP HARDCODED
         sessionService.LoggedInUser = 1;
         try
         {
+            //Get the course list from the Courses table in the DB
             courses = await DbContext.Courses.ToListAsync();
         }
         catch (SqlNullValueException ex)
         {
-            // Handle the situation where data contains null values
+            // Handle the situation where data contains null values where it shouldn't
             Console.WriteLine("Data contains null values: " + ex.Message);
-            courses = new List<Course>();
         }
     }
 
     private void Enroll(int CourseId)
     {
         Console.WriteLine(CourseId);
+
+        //Creates a new Enrollment object to be saved in Enrollment table
         var enrollment = new Enrollment {
-            EnrollmentDate = "todayWIP",
-            Progress = "noneWIP",
+            EnrollmentDate = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"),
+            Progress = "noneWIP", //to be initalised at 0 in whatever format we will choose
             UserId = sessionService.LoggedInUser,
-            CourseId = CourseId
+            CourseId = CourseId //Corresponds to the id of the course linked to the enroll button calling this method
         };
         Console.WriteLine(enrollment);
+
+        //Adds and saves the enrollment object as a new entry in the table
         DbContext.Enrollments.Add(enrollment);
         DbContext.SaveChanges();
     }
