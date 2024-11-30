@@ -3,17 +3,21 @@
 @using System.Collections.Generic
 @using System.Threading.Tasks
 @using Microsoft.EntityFrameworkCore
+@using Synaptica.Services
 @using Synaptica.Shared.Models
 @using Synaptica.Data
 @using System.Data.SqlTypes
+
 @inject SynpaticaDbContext DbContext
-@inject Synaptica.Services.SessionService SessionService
+@inject Synaptica.Services.SessionService sessionService
 
 
 <h3>Available Courses (WIP - currently not workign as intended, not loading courses even tho intended should)</h3>
 
+@courses
 @if (courses != null && courses.Count > 0)
 {
+    <p>test</p>
     <div class="course-list">
         @foreach (var course in courses)
         {
@@ -21,7 +25,7 @@
                 <h4>@(course.Title ?? "No Title Available")</h4>
                 <p>@(course.Description ?? "No Description Available")</p>
                 <p><strong>Duration:</strong> @(course.Duration ?? "No Duration Provided")</p>
-                <button @onclick="() => Enroll(course)">Enroll</button>
+                <button @onclick="() => Enroll(course.CourseId)">Enroll</button>
             </div>
         }
     </div>
@@ -32,10 +36,12 @@ else
 }
 
 @code {
-    private List<Course> courses;
+    private List<Course>? courses;
 
     protected override async Task OnInitializedAsync()
     {
+        //TEMP HARDCODED
+        sessionService.LoggedInUser = 1;
         try
         {
             courses = await DbContext.Courses.ToListAsync();
@@ -48,9 +54,17 @@ else
         }
     }
 
-    private void Enroll(Course course)
+    private void Enroll(int CourseId)
     {
-        // Placeholder method for enrolling in a course.
-        // Currently does nothing.
+        Console.WriteLine(CourseId);
+        var enrollment = new Enrollment {
+            EnrollmentDate = "todayWIP",
+            Progress = "noneWIP",
+            UserId = sessionService.LoggedInUser,
+            CourseId = CourseId
+        };
+        Console.WriteLine(enrollment);
+        DbContext.Enrollments.Add(enrollment);
+        DbContext.SaveChanges();
     }
-}
+}    

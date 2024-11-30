@@ -17,8 +17,8 @@ public class Course {
     [Column("duration")]
     public string? Duration { get; set; }
 
-    [Column("Instructor_InstructorId")]
-    public int InstructorId { get; set; }
+    [Column("instructor_instructorId")]
+    public int? InstructorId { get; set; }
 
 
     [ForeignKey("InstructorId")]  //links instructor idf to the instructor table

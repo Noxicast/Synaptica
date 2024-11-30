@@ -30,22 +30,25 @@ app.UseStaticFiles();
 app.UseRouting();
 app.MapBlazorHub();
 
+//Temp
+app.MapFallbackToPage("/_Host");
+
 // added this so on start register page is shown instead of dashboard
-app.UseEndpoints(endpoints =>
-{
-    endpoints.MapRazorPages();
-    endpoints.MapBlazorHub();
+// app.UseEndpoints(endpoints =>
+// {
+//     endpoints.MapRazorPages();
+//     endpoints.MapBlazorHub();
 
-    // Redirect "/" to "/register" on app startup
-    endpoints.MapGet("/", context =>
-    {
-        context.Response.Redirect("/register");
-        return Task.CompletedTask;
-    });
+//     // Redirect "/" to "/register" on app startup
+//     endpoints.MapGet("/", context =>
+//     {
+//         context.Response.Redirect("/register");
+//         return Task.CompletedTask;
+//     });
 
-    // this just falls back to the main page if there is an error
-    app.MapFallbackToPage("/_Host");
-});
+//     // this just falls back to the main page if there is an error
+//     app.MapFallbackToPage("/_Host");
+// });
 
 app.Run();
 

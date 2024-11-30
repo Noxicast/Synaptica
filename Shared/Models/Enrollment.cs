@@ -15,10 +15,11 @@ public class Enrollment {
     public string? Progress { get; set; }
 
     [Column("user_userId")]
-    public int UserId { get; set; }
+    public int? UserId { get; set; }
 
     [Column("course_courseId")]
-    public int CourseId { get; set; }
+    public int? CourseId { get; set; }
+
 
     [ForeignKey("UserId")]
     public User? User { get; set; }

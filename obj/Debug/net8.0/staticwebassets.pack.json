@@ -5,38 +5,6 @@
       "PackagePath": "staticwebassets\\Synaptica.l5pjpmkzyl.bundle.scp.css"
     },
     {
-      "Id": "P:\\Ecole\\Algonquin_College\\Semester_4\\Software Developpment Project\\Synaptica\\wwwroot\\Data\\Comment.json",
-      "PackagePath": "staticwebassets\\Data\\Comment.json"
-    },
-    {
-      "Id": "P:\\Ecole\\Algonquin_College\\Semester_4\\Software Developpment Project\\Synaptica\\wwwroot\\Data\\Course.json",
-      "PackagePath": "staticwebassets\\Data\\Course.json"
-    },
-    {
-      "Id": "P:\\Ecole\\Algonquin_College\\Semester_4\\Software Developpment Project\\Synaptica\\wwwroot\\Data\\Enrollement.json",
-      "PackagePath": "staticwebassets\\Data\\Enrollement.json"
-    },
-    {
-      "Id": "P:\\Ecole\\Algonquin_College\\Semester_4\\Software Developpment Project\\Synaptica\\wwwroot\\Data\\Instructor.json",
-      "PackagePath": "staticwebassets\\Data\\Instructor.json"
-    },
-    {
-      "Id": "P:\\Ecole\\Algonquin_College\\Semester_4\\Software Developpment Project\\Synaptica\\wwwroot\\Data\\Notification.json",
-      "PackagePath": "staticwebassets\\Data\\Notification.json"
-    },
-    {
-      "Id": "P:\\Ecole\\Algonquin_College\\Semester_4\\Software Developpment Project\\Synaptica\\wwwroot\\Data\\Quiz.json",
-      "PackagePath": "staticwebassets\\Data\\Quiz.json"
-    },
-    {
-      "Id": "P:\\Ecole\\Algonquin_College\\Semester_4\\Software Developpment Project\\Synaptica\\wwwroot\\Data\\QuizQuestion.json",
-      "PackagePath": "staticwebassets\\Data\\QuizQuestion.json"
-    },
-    {
-      "Id": "P:\\Ecole\\Algonquin_College\\Semester_4\\Software Developpment Project\\Synaptica\\wwwroot\\Data\\User.json",
-      "PackagePath": "staticwebassets\\Data\\User.json"
-    },
-    {
       "Id": "P:\\Ecole\\Algonquin_College\\Semester_4\\Software Developpment Project\\Synaptica\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
     },
