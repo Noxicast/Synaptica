@@ -2,15 +2,70 @@
 @using Synaptica.Shared.Models
 
 @inject SynpaticaDbContext DbContext
-@inject Synaptica.Services.SessionService SessionService
+@inject Synaptica.Services.SessionService sessionService
 
 @page "/profile"
 <PageTitle>Profile</PageTitle>
+
 <h3>Profile</h3>
-<p>Get and display users info like username, email...etc and maybe implement 
-    functionality to change them???</p>
+<div class="form-group">
+    <label for="name">Name:</label>
+    <input type="text" id="name" @bind="user.Name" @oninput="TrackChanges" class="form-control" />
+</div>
 
-<p>User logged in: @SessionService.LoggedInUser</p>
+<div class="form-group">
+    <label for="email">Email:</label>
+    <input type="email" id="email" @bind="user.Email" @oninput="TrackChanges" class="form-control" />
+</div>
+
+<div class="form-group">
+    <label for="password">Password:</label>
+    <input type="password" id="password" @bind="user.Password" @oninput="TrackChanges " class="form-control" />
+</div>
+
+<div class="form-group">
+    @if (changesMade) {
+    <button @onclick="SaveChanges">Save</button> 
+    <button @onclick="CancelChanges">Cancel (not working,- just reload the page)</button> <!-- Currently not working as intented-->
+}
+</div>
+
 @code {
+    private User? user;
+    private bool changesMade = false;
 
+
+    protected override async Task OnInitializedAsync()
+    {
+        //TEMP HARDCODED
+        sessionService.LoggedInUser = 1;    
+
+        //Loads user info from the Id
+        user = DbContext.Users.FirstOrDefault(u => u.UserId == sessionService.LoggedInUser)!;
+    }
+
+    private void TrackChanges() => changesMade = true;
+
+    private void SaveChanges() {
+        if (user == null) {
+            // Handle the case where the user object is null
+            throw new InvalidOperationException("User is not loaded.");
+        }
+
+        // Update the user record in the database
+        DbContext.Users.Update(user); // Tracks the changes to the entity
+        DbContext.SaveChanges(); // Saves the changes to the database
+
+        // Reset the change tracker
+        user = DbContext.Users.FirstOrDefault(u => u.UserId == sessionService.LoggedInUser)!;
+        changesMade = false; // Reset the changesMade flag
+    }
+
+    //NOT WORKIGN AS INTENTED, DATA NOT BEING RELOADED
+    private void CancelChanges() {
+        // Reset the change tracker
+        user = DbContext.Users.FirstOrDefault(u => u.UserId == sessionService.LoggedInUser)!;
+        changesMade = false;
+        StateHasChanged(); //Reloads the fields with the original data
+    }
 }

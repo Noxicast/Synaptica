@@ -26,7 +26,11 @@
                 <h4>@(course.Title ?? "No Title Available")</h4>
                 <p>@(course.Description ?? "No Description Available")</p>
                 <p><strong>Duration:</strong> @(course.Duration ?? "No Duration Provided")</p>
-                <button @onclick="() => Enroll(course.CourseId)">Enroll</button>
+                @if(userEnrolled(course.CourseId) == false) {
+                    <button @onclick="() => Enroll(course.CourseId)">Enroll</button>
+                } else {
+                    <button @onclick="() => DropCourse(course.CourseId)">Drop Course</button>
+                }
             </div>
         }
     </div>
@@ -39,6 +43,7 @@ else
 @code {
 
     private List<Course>? courses;
+
     protected override async Task OnInitializedAsync()
     {
         //TEMP HARDCODED
@@ -53,6 +58,25 @@ else
             // Handle the situation where data contains null values where it shouldn't
             Console.WriteLine("Data contains null values: " + ex.Message);
         }
+    }
+
+    private bool userEnrolled(int courseId)  {
+        //checks the db to determine if the user is registered to the course in question
+        var enrollment = DbContext.Enrollments.FirstOrDefault(e => e.UserId == sessionService.LoggedInUser && e.CourseId == courseId);
+        if (enrollment != null) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    private void DropCourse(int courseId) {
+        //checks the db to determine if the user is registered to the course in question
+        var enrollment = DbContext.Enrollments.FirstOrDefault(e => e.UserId == sessionService.LoggedInUser && e.CourseId == courseId);
+
+        //Removes and saves the enrollment object as a new entry in the table
+        DbContext.Enrollments.Remove(enrollment!);
+        DbContext.SaveChanges();
     }
 
     private void Enroll(int CourseId)
