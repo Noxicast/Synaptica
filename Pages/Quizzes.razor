@@ -1,8 +1,36 @@
 ﻿@page "/quizzes"
 <PageTitle>Quizzes</PageTitle>
-<h3>Quizzes</h3>
-<p>I think this is where all the quizzes will take place, llike course where shows current ones along 
-    with being able to get new oens</p>
-@code {
 
+<h3>Available Quizzes</h3>
+
+<p>Select a quiz to test your knowledge:</p>
+
+@foreach (var quiz in quizzes)
+{
+    <div class="quiz-card">
+        <h4>@quiz.Title</h4>
+        <p>@quiz.Description</p>
+        <p><strong>Duration:</strong> @quiz.Duration minutes</p>
+        <button class="btn btn-primary" @onclick="() => NavigateToQuiz(quiz.Id)">Start Quiz</button>
+    </div>
+}
+
+@code {
+    private List<Quiz> quizzes = new()
+    {
+        new Quiz { Id = 1, Title = "Introduction to Python", Description = "Test your Python skills.", Duration = 10 },
+        new Quiz { Id = 2, Title = "Web Development Essentials", Description = "Challenge your Web Development knowledge.", Duration = 5 }
+    };
+
+    [Inject] private NavigationManager Navigation { get; set; }
+
+    private void NavigateToQuiz(int quizId) => Navigation.NavigateTo($"/quiz/{quizId}");
+
+    private class Quiz
+    {
+        public int Id { get; set; }
+        public string Title { get; set; }
+        public string Description { get; set; }
+        public int Duration { get; set; }
+    }
 }
