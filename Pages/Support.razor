@@ -1,7 +1,53 @@
 ﻿@page "/support"
+
+@inject NavigationManager NavigationManager
+
 <PageTitle>Support</PageTitle>
 <h3>Support</h3>
-<p>add functionality to submit a form or just open an email to "x" person</p>
-@code {
+<p>Fill out the below form to contact support or report any issues.</p>
 
+<!-- Basic email support form. Takes the information written here and applies it to an email to "support@synaptica.com"  -->
+<EditForm Model="@formModel" OnValidSubmit="@HandleSubmit">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <div>
+        <label for="name">Name:</label>
+        <InputText id="name" class="form-control" @bind-Value="formModel.Name" />
+    </div>
+
+    <div>
+        <label for="email">Email:</label>
+        <InputText id="email" class="form-control" @bind-Value="formModel.Email" />
+    </div>
+
+    <div>
+        <label for="subject">Subject:</label>
+        <InputText id="subject" class="form-control" @bind-Value="formModel.Subject" />
+    </div>
+
+    <div>
+        <label for="message">Message:</label>
+        <InputTextArea id="message" class="form-control" @bind-Value="formModel.Message" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Send</button>
+</EditForm>
+
+@code {
+    private SupportForm formModel = new SupportForm();
+
+    private void HandleSubmit()
+    {
+        string mailto = $"mailto:support@synaptica.com?subject={Uri.EscapeDataString(formModel.Subject)}&body={Uri.EscapeDataString($"From: {formModel.Name} ({formModel.Email})\n\n{formModel.Message}")}";
+        NavigationManager.NavigateTo(mailto, true);
+    }
+
+    public class SupportForm
+    {
+        public string Name { get; set; } = string.Empty;
+        public string Email { get; set; } = string.Empty;
+        public string Subject { get; set; } = string.Empty;
+        public string Message { get; set; } = string.Empty;
+    }
 }
