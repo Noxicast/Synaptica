@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "t7rfc+43SJsRwSTbnWJFzECIC0SRElCjlqnofqm7BnU=",
+  "Hash": "tUHE2aMfyfmEiJYXeoXQdbgAte14WsNqzgqWe1xSFoE=",
   "Source": "Synaptica",
   "BasePath": "_content/Synaptica",
   "Mode": "Default",
@@ -31,8 +31,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ApplicationBundle",
-      "Fingerprint": "l5pjpmkzyl",
-      "Integrity": "5yjhXtNX7F6gFrdgNvVKah94O5WdUrfSb4u9eoqs9eU=",
+      "Fingerprint": "nlwuyydruj",
+      "Integrity": "dUVaMYnM13XzE6DGiVqeZWCvkciIU0P7tn4yXWGMqO4=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "P:\\Ecole\\Algonquin_College\\Semester_4\\Software Developpment Project\\Synaptica\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Synaptica.styles.css"
@@ -52,8 +52,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ProjectBundle",
-      "Fingerprint": "l5pjpmkzyl",
-      "Integrity": "5yjhXtNX7F6gFrdgNvVKah94O5WdUrfSb4u9eoqs9eU=",
+      "Fingerprint": "nlwuyydruj",
+      "Integrity": "dUVaMYnM13XzE6DGiVqeZWCvkciIU0P7tn4yXWGMqO4=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "P:\\Ecole\\Algonquin_College\\Semester_4\\Software Developpment Project\\Synaptica\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Synaptica.bundle.scp.css"
@@ -1410,7 +1410,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2839"
+          "Value": "5530"
         },
         {
           "Name": "Content-Type",
@@ -1418,11 +1418,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"5yjhXtNX7F6gFrdgNvVKah94O5WdUrfSb4u9eoqs9eU=\""
+          "Value": "\"dUVaMYnM13XzE6DGiVqeZWCvkciIU0P7tn4yXWGMqO4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 18 Nov 2024 19:59:27 GMT"
+          "Value": "Wed, 11 Dec 2024 05:34:31 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1432,12 +1432,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-5yjhXtNX7F6gFrdgNvVKah94O5WdUrfSb4u9eoqs9eU="
+          "Value": "sha256-dUVaMYnM13XzE6DGiVqeZWCvkciIU0P7tn4yXWGMqO4="
         }
       ]
     },
     {
-      "Route": "Synaptica.l5pjpmkzyl.bundle.scp.css",
+      "Route": "Synaptica.nlwuyydruj.bundle.scp.css",
       "AssetFile": "P:\\Ecole\\Algonquin_College\\Semester_4\\Software Developpment Project\\Synaptica\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Synaptica.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -1447,7 +1447,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2839"
+          "Value": "5530"
         },
         {
           "Name": "Content-Type",
@@ -1455,11 +1455,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"5yjhXtNX7F6gFrdgNvVKah94O5WdUrfSb4u9eoqs9eU=\""
+          "Value": "\"dUVaMYnM13XzE6DGiVqeZWCvkciIU0P7tn4yXWGMqO4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 18 Nov 2024 19:59:27 GMT"
+          "Value": "Wed, 11 Dec 2024 05:34:31 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1469,7 +1469,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "l5pjpmkzyl"
+          "Value": "nlwuyydruj"
         },
         {
           "Name": "label",
@@ -1477,12 +1477,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-5yjhXtNX7F6gFrdgNvVKah94O5WdUrfSb4u9eoqs9eU="
+          "Value": "sha256-dUVaMYnM13XzE6DGiVqeZWCvkciIU0P7tn4yXWGMqO4="
         }
       ]
     },
     {
-      "Route": "Synaptica.l5pjpmkzyl.styles.css",
+      "Route": "Synaptica.nlwuyydruj.styles.css",
       "AssetFile": "P:\\Ecole\\Algonquin_College\\Semester_4\\Software Developpment Project\\Synaptica\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Synaptica.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -1492,7 +1492,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2839"
+          "Value": "5530"
         },
         {
           "Name": "Content-Type",
@@ -1500,11 +1500,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"5yjhXtNX7F6gFrdgNvVKah94O5WdUrfSb4u9eoqs9eU=\""
+          "Value": "\"dUVaMYnM13XzE6DGiVqeZWCvkciIU0P7tn4yXWGMqO4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 18 Nov 2024 19:59:27 GMT"
+          "Value": "Wed, 11 Dec 2024 05:34:31 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1514,7 +1514,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "l5pjpmkzyl"
+          "Value": "nlwuyydruj"
         },
         {
           "Name": "label",
@@ -1522,7 +1522,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-5yjhXtNX7F6gFrdgNvVKah94O5WdUrfSb4u9eoqs9eU="
+          "Value": "sha256-dUVaMYnM13XzE6DGiVqeZWCvkciIU0P7tn4yXWGMqO4="
         }
       ]
     },
@@ -1537,7 +1537,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2839"
+          "Value": "5530"
         },
         {
           "Name": "Content-Type",
@@ -1545,11 +1545,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"5yjhXtNX7F6gFrdgNvVKah94O5WdUrfSb4u9eoqs9eU=\""
+          "Value": "\"dUVaMYnM13XzE6DGiVqeZWCvkciIU0P7tn4yXWGMqO4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 18 Nov 2024 19:59:27 GMT"
+          "Value": "Wed, 11 Dec 2024 05:34:31 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1559,7 +1559,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-5yjhXtNX7F6gFrdgNvVKah94O5WdUrfSb4u9eoqs9eU="
+          "Value": "sha256-dUVaMYnM13XzE6DGiVqeZWCvkciIU0P7tn4yXWGMqO4="
         }
       ]
     }

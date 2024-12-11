@@ -681,3 +681,4 @@ P:\Ecole\Algonquin_College\Semester_4\Software Developpment Project\Synaptica\bi
 P:\Ecole\Algonquin_College\Semester_4\Software Developpment Project\Synaptica\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 P:\Ecole\Algonquin_College\Semester_4\Software Developpment Project\Synaptica\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
 P:\Ecole\Algonquin_College\Semester_4\Software Developpment Project\Synaptica\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+P:\Ecole\Algonquin_College\Semester_4\Software Developpment Project\Synaptica\obj\Debug\net8.0\scopedcss\Pages\QuizDetails.razor.rz.scp.css

@@ -1,0 +1,232 @@
+@page "/course-home/{courseId:int}"
+
+@using Microsoft.EntityFrameworkCore
+@using Synaptica.Shared.Models
+@using Synaptica.Data
+
+@inject SynpaticaDbContext DbContext
+@inject Synaptica.Services.SessionService sessionService
+
+<PageTitle>Course Dashboard</PageTitle>
+
+<style>
+    .course-dashboard {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2rem;
+        gap: 2rem;
+    }
+
+    .left-section {
+        flex: 3;
+        margin-right: 1rem;
+    }
+
+    .right-section {
+        flex: 1;
+        border: 1px solid #ccc;
+        padding: 1rem;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+    }
+
+    .course-details, .instructor-info, .course-notifications {
+        margin-bottom: 2rem;
+        padding: 1rem;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .course-details h1 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .course-details .description {
+        font-size: 1.2rem;
+        color: #555;
+        margin-bottom: 1rem;
+    }
+
+    .course-details .duration {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+        color: #333;
+    }
+
+    .instructor-info h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        color: #444;
+    }
+
+    .instructor-info p {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+        color: #555;
+    }
+
+    .course-notifications h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        color: #444;
+    }
+
+    .notifications-list {
+        list-style-type: disc;
+        padding-left: 1.5rem;
+    }
+
+    .notification-item {
+        margin-bottom: 0.5rem;
+        line-height: 1.5;
+        color: #555;
+    }
+
+    /* Style for quizzes */
+    .quizzes-list {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .quiz-item {
+        margin-bottom: 1rem;
+    }
+
+    .quiz-link {
+        text-decoration: none;
+        color: #333;
+        display: block;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 1rem;
+        background-color: #fff;
+        transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .quiz-link:hover {
+        background-color: #f9f9f9;
+        border-color: #bbb;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .quiz-content p {
+        margin: 0.5rem 0;
+        font-size: 1rem;
+    }
+
+    .quiz-content p strong {
+        font-weight: 600;
+    }
+</style>
+
+<div class="course-dashboard">
+    <!-- Left Section: Course Details and Notifications -->
+    <div class="left-section">
+        @if (course != null)
+        {
+            <!-- Course Details -->
+            <div class="course-details">
+                <h1>@course.Title</h1>
+                <p class="description">@course.Description</p>
+                <p class="duration"><strong>Duration:</strong> @course.Duration</p>
+            </div>
+
+            <!-- Instructor Details -->
+            @if (instructor != null)
+            {
+                <div class="instructor-info">
+                    <h2>Instructor</h2>
+                    <p><strong>Name:</strong> @instructor.Name</p>
+                    <p><strong>Email:</strong> <a href="mailto:@instructor.Email">@instructor.Email</a></p>
+                </div>
+            }
+
+            <!-- Notifications Section -->
+            <div class="course-notifications">
+                <h2>Notifications</h2>
+                @if (notifications?.Any() ?? false)
+                {
+                    <ul class="notifications-list">
+                        @foreach (var notification in notifications)
+                        {
+                            <li class="notification-item">
+                                <strong>@notification.Timestamp:</strong> @notification.Message
+                            </li>
+                        }
+                    </ul>
+                }
+                else
+                {
+                    <p>No notifications available.</p>
+                }
+            </div>
+        }
+        else
+        {
+            <p>Course not found.</p>
+        }
+    </div>
+
+    <!-- Right Section: Quizzes -->
+    <div class="right-section">
+        <h2>Quizzes</h2>
+        @if (quizzes?.Any() ?? false)
+        {
+            <ul class="quizzes-list">
+                @foreach (var quiz in quizzes)
+                {
+                    <li class="quiz-item">
+                        <a href="/quiz/@quiz.QuizId" class="quiz-link">
+                            <div class="quiz-content">
+                                <p><strong>Quiz ID:</strong> @quiz.QuizId</p>
+                                <p><strong>Passing Score:</strong> @quiz.PassingScore</p>
+                                <p><strong>Duration:</strong> @quiz.Duration</p>
+                            </div>
+                        </a>
+                    </li>
+                }
+            </ul>
+        }
+        else
+        {
+            <p>No quizzes available for this course.</p>
+        }
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public int courseId { get; set; }
+
+    private Course? course;
+    private Instructor? instructor;
+    private List<Notification> notifications = new();
+    private List<Quiz> quizzes = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        // Fetch the course details
+        course = await DbContext.Courses.FirstOrDefaultAsync(c => c.CourseId == courseId);
+
+        // Fetch the instructor details
+        if (course != null)
+        {
+            instructor = await DbContext.Instructors.FirstOrDefaultAsync(i => i.InstructorId == course.InstructorId);
+        }
+
+        // Fetch notifications for the course
+        notifications = await DbContext.Notifications
+            .Where(n => n.CourseId == courseId)
+            .OrderByDescending(n => n.Timestamp)
+            .ToListAsync();
+
+        // Fetch quizzes for the course
+        quizzes = await DbContext.Quizzes
+            .Where(q => q.CourseId == courseId)
+            .ToListAsync();
+    }
+}

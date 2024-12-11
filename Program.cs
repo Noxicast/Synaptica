@@ -13,7 +13,7 @@ builder.Services.AddSingleton<SessionService>();
 
 
 builder.Services.AddDbContext<SynpaticaDbContext>(options =>
-    options.UseSqlServer("Server=localhost;Database=synpatica;Trusted_Connection=True;TrustServerCertificate=True;"));
+    options.UseSqlServer("Server=localhost;Database=synaptica;Trusted_Connection=True;TrustServerCertificate=True;"));
 
 
 var app = builder.Build();

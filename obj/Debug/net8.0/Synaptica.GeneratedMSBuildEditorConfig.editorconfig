@@ -32,6 +32,10 @@ build_property.EnableCodeStyleSeverity =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[P:/Ecole/Algonquin_College/Semester_4/Software Developpment Project/Synaptica/Pages/CourseDashboard.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291cnNlRGFzaGJvYXJkLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [P:/Ecole/Algonquin_College/Semester_4/Software Developpment Project/Synaptica/Pages/Courses.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291cnNlcy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
@@ -63,6 +67,10 @@ build_metadata.AdditionalFiles.CssScope =
 [P:/Ecole/Algonquin_College/Semester_4/Software Developpment Project/Synaptica/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
+
+[P:/Ecole/Algonquin_College/Semester_4/Software Developpment Project/Synaptica/Pages/QuizDetails.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUXVpekRldGFpbHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-nxb6lk0vls
 
 [P:/Ecole/Algonquin_College/Semester_4/Software Developpment Project/Synaptica/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=

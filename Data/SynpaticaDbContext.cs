@@ -26,7 +26,7 @@ namespace Synaptica.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-
+            
             // Optional: Add custom configurations here, such as composite keys or default values.
         }
     }

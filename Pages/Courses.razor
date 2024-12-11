@@ -12,24 +12,99 @@
 @inject SynpaticaDbContext DbContext
 @inject Synaptica.Services.SessionService sessionService
 
+<PageTitle>Course Enrollement</PageTitle>
+
+<style>
+    .welcome-message {
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 1rem;
+        margin-bottom: 1.5rem;
+        text-align: center;
+    }
+
+    .welcome-message h2 {
+        font-size: 1.8rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .course-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+    }
+
+    .course-item {
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 1rem;
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        flex: 1 1 calc(33.333% - 1.5rem);
+        max-width: calc(33.333% - 1.5rem);
+    }
+
+    .course-item h4 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .course-item p {
+        margin: 0.5rem 0;
+        color: #555;
+    }
+
+    .btn-enroll, .btn-drop {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        cursor: pointer;
+        text-align: center;
+    }
+
+    .btn-drop {
+        background-color: #dc3545;
+    }
+
+    .btn-enroll:hover {
+        background-color: #0056b3;
+    }
+
+    .btn-drop:hover {
+        background-color: #a71d2a;
+    }
+</style>
+
+<!-- Welcome Message -->
+<div class="welcome-message">
+    <h2>Welcome, @userName!</h2>
+    <p>Browse available courses and manage your enrollments below:</p>
+</div>
 
 <h3>Available Courses</h3>
 
 @if (courses != null && courses.Count > 0)
 {
     <div class="course-list">
-
-        <!-- displays available courses in the database with (title,description,Enroll button)-->
+        <!-- Display available courses -->
         @foreach (var course in courses)
         {
             <div class="course-item">
                 <h4>@(course.Title ?? "No Title Available")</h4>
                 <p>@(course.Description ?? "No Description Available")</p>
                 <p><strong>Duration:</strong> @(course.Duration ?? "No Duration Provided")</p>
-                @if(userEnrolled(course.CourseId) == false) {
-                    <button @onclick="() => Enroll(course.CourseId)">Enroll</button>
-                } else {
-                    <button @onclick="() => DropCourse(course.CourseId)">Drop Course</button>
+                <p><strong>Instructor:</strong> @(GetInstructorName(course.InstructorId ?? 0))</p>
+
+                @if (!userEnrolled(course.CourseId))
+                {
+                    <button class="btn-enroll" @onclick="() => Enroll(course.CourseId)">Enroll</button>
+                }
+                else
+                {
+                    <button class="btn-drop" @onclick="() => DropCourse(course.CourseId)">Drop Course</button>
                 }
             </div>
         }
@@ -40,60 +115,62 @@ else
     <p>No courses available at the moment.</p>
 }
 
+
+
 @code {
 
+    private string? userName;
     private List<Course>? courses;
 
     protected override async Task OnInitializedAsync()
     {
-        //TEMP HARDCODED
-        sessionService.LoggedInUser = 1;
+
         try
         {
-            //Get the course list from the Courses table in the DB
+            // Fetch user name
+            var user = await DbContext.Users.FindAsync(sessionService.LoggedInUser);
+            userName = user?.Name ?? "User";
+
+            // Fetch the course list
             courses = await DbContext.Courses.ToListAsync();
         }
         catch (SqlNullValueException ex)
         {
-            // Handle the situation where data contains null values where it shouldn't
             Console.WriteLine("Data contains null values: " + ex.Message);
         }
     }
 
-    private bool userEnrolled(int courseId)  {
-        //checks the db to determine if the user is registered to the course in question
+    private string GetInstructorName(int instructorId)
+    {
+        var instructor = DbContext.Instructors.FirstOrDefault(i => i.InstructorId == instructorId);
+        return instructor?.Name ?? "Unknown";
+    }
+
+    private bool userEnrolled(int courseId)
+    {
+        return DbContext.Enrollments.Any(e => e.UserId == sessionService.LoggedInUser && e.CourseId == courseId);
+    }
+
+    private void DropCourse(int courseId)
+    {
         var enrollment = DbContext.Enrollments.FirstOrDefault(e => e.UserId == sessionService.LoggedInUser && e.CourseId == courseId);
-        if (enrollment != null) {
-            return true;
-        } else {
-            return false;
+        if (enrollment != null)
+        {
+            DbContext.Enrollments.Remove(enrollment);
+            DbContext.SaveChanges();
         }
     }
 
-    private void DropCourse(int courseId) {
-        //checks the db to determine if the user is registered to the course in question
-        var enrollment = DbContext.Enrollments.FirstOrDefault(e => e.UserId == sessionService.LoggedInUser && e.CourseId == courseId);
-
-        //Removes and saves the enrollment object as a new entry in the table
-        DbContext.Enrollments.Remove(enrollment!);
-        DbContext.SaveChanges();
-    }
-
-    private void Enroll(int CourseId)
+    private void Enroll(int courseId)
     {
-        Console.WriteLine(CourseId);
-
-        //Creates a new Enrollment object to be saved in Enrollment table
-        var enrollment = new Enrollment {
+        var enrollment = new Enrollment
+        {
             EnrollmentDate = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"),
-            Progress = "noneWIP", //to be initalised at 0 in whatever format we will choose
+            Progress = "0%",
             UserId = sessionService.LoggedInUser,
-            CourseId = CourseId //Corresponds to the id of the course linked to the enroll button calling this method
+            CourseId = courseId
         };
-        Console.WriteLine(enrollment);
-
-        //Adds and saves the enrollment object as a new entry in the table
         DbContext.Enrollments.Add(enrollment);
         DbContext.SaveChanges();
     }
-}    
+}
