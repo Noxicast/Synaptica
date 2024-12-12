@@ -55,7 +55,7 @@ namespace Synaptica.Pages
                 }
                 //when there is a valid user then set the logged in user to their name
                 _sessionService.LoggedInUser = user.UserId;
-
+                _sessionService.SetLoggedInUser(user.UserId);
                 return Redirect("/index"); // redirects to our home page after login
             }
             catch (Exception e)

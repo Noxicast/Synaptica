@@ -1,30 +1,123 @@
 ﻿@page "/quizzes"
-<PageTitle>Quizzes</PageTitle>
+<PageTitle>Available Quizzes</PageTitle>
 
-<h3>Available Quizzes</h3>
+<style>
+    .welcome-message {
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 1rem;
+        margin-bottom: 1.5rem;
+        text-align: center;
+    }
 
-<p>Select a quiz to test your knowledge:</p>
+    .welcome-message h2 {
+        font-size: 1.8rem;
+        margin-bottom: 0.5rem;
+    }
 
-@foreach (var quiz in quizzes)
+    .quiz-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+    }
+
+    .quiz-item {
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 1rem;
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        flex: 1 1 calc(33.333% - 1.5rem);
+        max-width: calc(33.333% - 1.5rem);
+    }
+
+    .quiz-item h4 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .quiz-item p {
+        margin: 0.5rem 0;
+        color: #555;
+    }
+
+    .btn-start {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        cursor: pointer;
+        text-align: center;
+    }
+
+    .btn-start:hover {
+        background-color: #0056b3;
+    }
+</style>
+
+
+<div class="welcome-message">
+    <h2>Available Quizzes</h2>
+    <p>Select a quiz to test your knowledge and track your progress.</p>
+</div>
+
+
+@if (quizzes != null && quizzes.Count > 0)
 {
-    <div class="quiz-card">
-        <h4>@quiz.Title</h4>
-        <p>@quiz.Description</p>
-        <p><strong>Duration:</strong> @quiz.Duration minutes</p>
-        <button class="btn btn-primary" @onclick="() => NavigateToQuiz(quiz.Id)">Start Quiz</button>
+    <div class="quiz-list">
+        @foreach (var quiz in quizzes)
+        {
+            <div class="quiz-item">
+                <h4>@quiz.Title</h4>
+                <p>@quiz.Description</p>
+                <p><strong>Duration:</strong> @quiz.Duration minutes</p>
+                <button class="btn-start" @onclick="() => NavigateToQuiz(quiz.Id)">Start Quiz</button>
+            </div>
+        }
     </div>
+} 
+else
+{
+    <p>No quizzes available at the moment.</p>
 }
+
+
+
+
+
+
 
 @code {
     private List<Quiz> quizzes = new()
     {
         new Quiz { Id = 1, Title = "Introduction to Python", Description = "Test your Python skills.", Duration = 10 },
-        new Quiz { Id = 2, Title = "Web Development Essentials", Description = "Challenge your Web Development knowledge.", Duration = 5 }
+        new Quiz { Id = 2, Title = "Python basics 2", Description = "Test your Python knowledge.", Duration = 5 },
+        new Quiz { Id = 3, Title = "Cloud security basics", Description = "Test your cloud security knowledge.", Duration = 15 },
+        new Quiz { Id = 4, Title = "Cloud security basics 2", Description = "Test your cloud security knowledge.", Duration = 5 },
+        new Quiz { Id = 5, Title = "Mobile app development", Description = "Test your Mobile app development knowledge.", Duration = 5 },
+        new Quiz { Id = 6, Title = "Mobile app development 2", Description = "Test your Mobile app development knowledge.", Duration = 10 },
+        new Quiz { Id = 7, Title = "Network Administration basics", Description = "Test your Network Administration knowledge.", Duration = 5 },
+        new Quiz { Id = 8, Title = "Network Administration 2", Description = "Test your Network Administration knowledge.", Duration = 5 },
+        new Quiz { Id = 9, Title = "Game Development with unity", Description = "Test your Game Development knowledge.", Duration = 10 },
+        new Quiz { Id = 10, Title = "Game Development with unity 2", Description = "Test your Game Development knowledge.", Duration = 5 },
+        new Quiz { Id = 11, Title = "Introduction to blockchain", Description = "Test your blockchain knowledge.", Duration = 5 },
+        new Quiz { Id = 12, Title = "Introduction to blockchain 2", Description = "Test your blockchain knowledge.", Duration = 5 },
+        new Quiz { Id = 13, Title = "Data visualization with tableau", Description = "Test your tableau knowledge.", Duration = 7 },
+        new Quiz { Id = 14, Title = "Data visualization with tableau 2", Description = "Test your tableau knowledge.", Duration = 7 },
+        new Quiz { Id = 15, Title = "Advanced Java", Description = "Test your Java knowledge.", Duration = 10 },
+        new Quiz { Id = 16, Title = "Advanced Java 2", Description = "Test your Java knowledge.", Duration = 10 },
+        new Quiz { Id = 17, Title = "Digital marketing", Description = "Test your Digital marketing knowledge.", Duration = 10 },
+        new Quiz { Id = 18, Title = "Digital marketing 2", Description = "Test your Digital marketing knowledge.", Duration = 10 },
+        new Quiz { Id = 19, Title = "Robotics basics", Description = "Test your Robotics knowledge.", Duration = 10 },
+        new Quiz { Id = 20, Title = "Robotics basics 2", Description = "Test your Robotics knowledge.", Duration = 10 }
+        
     };
 
     [Inject] private NavigationManager Navigation { get; set; }
 
-    private void NavigateToQuiz(int quizId) => Navigation.NavigateTo($"/quiz/{quizId}");
+    private void NavigateToQuiz(int quizId) => Navigation.NavigateTo($"/quizRedirect/{quizId}");
 
     private class Quiz
     {

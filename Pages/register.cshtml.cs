@@ -81,16 +81,16 @@ namespace Synaptica.Pages
                 // Redirect to login page
                 return Redirect("/login");
             }
-            catch (DbUpdateException)
+            catch (DbUpdateException e)
             {
                 // privode database error message in case
-                ErrorMessage = "Database error";
+                ErrorMessage = "Database error" + e;
                 return Page();
             }
-            catch (Exception)
+            catch (Exception e)
             {
                 // provide message on random error
-                ErrorMessage = "An error occurred";
+                ErrorMessage = "An error occurred" + e;
                 return Page();
             }
         }

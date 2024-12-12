@@ -58,7 +58,7 @@ else
             <h2>Quiz Completed!</h2>
             <p>You got <strong>@correctAnswers</strong> out of <strong>@quizQuestions.Count</strong> correct!</p>
         }
-        <button class="btn btn-primary" @onclick="ReturnToHome">Back to Quizzes</button>
+        <button class="btn btn-primary" @onclick="ReturnToHome">Back to Home</button>
     </div>
 }
 
@@ -142,7 +142,7 @@ else
     private void ReturnToHome()
     {
         timer.Stop();
-        Navigation.NavigateTo("/quizzes");
+        Navigation.NavigateTo("/index");
     }
 
     private string GetOptionClass(int index)

@@ -7,7 +7,12 @@
 
         public SessionService() {
             // TEMP: Hardcoded user session
-            this.LoggedInUser = 1;
+            this.LoggedInUser = null;
+        }
+
+        public void SetLoggedInUser(int userId)
+        {
+            LoggedInUser = userId;
         }
     }
 }

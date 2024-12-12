@@ -180,10 +180,10 @@
                 @foreach (var quiz in quizzes)
                 {
                     <li class="quiz-item">
-                        <a href="/quiz/@quiz.QuizId" class="quiz-link">
+                        <a href="/quizRedirect/@quiz.QuizId" class="quiz-link">
                             <div class="quiz-content">
                                 <p><strong>Quiz ID:</strong> @quiz.QuizId</p>
-                                <p><strong>Passing Score:</strong> @quiz.PassingScore</p>
+                                <p><strong>Passing Score:</strong> @quiz.PassingScore%</p>
                                 <p><strong>Duration:</strong> @quiz.Duration</p>
                             </div>
                         </a>

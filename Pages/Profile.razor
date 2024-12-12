@@ -38,7 +38,7 @@
     protected override async Task OnInitializedAsync()
     {
         //TEMP HARDCODED
-        sessionService.LoggedInUser = 1;    
+        // sessionService.LoggedInUser = 1;    
 
         //Loads user info from the Id
         user = DbContext.Users.FirstOrDefault(u => u.UserId == sessionService.LoggedInUser)!;

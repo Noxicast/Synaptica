@@ -1,0 +1,146 @@
+﻿@page "/quizRedirect/{QuizId:int}"
+@inject NavigationManager Navigation
+
+<PageTitle>Quiz Details</PageTitle>
+
+<style>
+    .quiz-redirect-container {
+        max-width: 600px;
+        margin: 2rem auto;
+        padding: 1.5rem;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        background-color: #f9f9f9;
+        text-align: center;
+    }
+
+    .quiz-redirect-container h2 {
+        margin-bottom: 1rem;
+        font-size: 1.8rem;
+    }
+
+    .quiz-redirect-container p {
+        margin: 0.5rem 0;
+        font-size: 1rem;
+        color: #555;
+    }
+
+    .quiz-redirect-buttons {
+        margin-top: 1.5rem;
+    }
+
+    .quiz-redirect-buttons button {
+        margin: 0.5rem;
+        padding: 0.7rem 1.2rem;
+        font-size: 1rem;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .btn-start {
+        background-color: #007bff;
+        color: white;
+    }
+
+    .btn-start:hover {
+        background-color: #0056b3;
+    }
+
+    .btn-cancel {
+        background-color: #dc3545;
+        color: white;
+    }
+
+    .btn-cancel:hover {
+        background-color: #a71d2a;
+    }
+</style>
+
+<div class="quiz-redirect-container">
+    <h2>@quizTitle</h2>
+    <p><strong>Number of Questions:</strong> @questionCount</p>
+    <p><strong>Duration:</strong> @duration minutes</p>
+    <p>Are you sure you want to start this quiz?</p>
+
+    <div class="quiz-redirect-buttons">
+        <button class="btn-start" @onclick="StartQuiz">Yes, Start Quiz</button>
+        <button class="btn-cancel" @onclick="ReturnHome">Back to courses</button>
+        <button class="btn-cancel" @onclick="CancelQuiz">Browse quizzes</button>
+    </div>
+</div>
+
+@code {
+    [Parameter] public int QuizId { get; set; }
+
+    private string quizTitle = "Loading...";
+    private int questionCount = 0;
+    private int duration = 0;
+
+    protected override void OnInitialized()
+    {
+     
+        var quiz = GetQuizDetails(QuizId);
+        if (quiz != null)
+        {
+            quizTitle = quiz.Title;
+            questionCount = quiz.QuestionCount;
+            duration = quiz.Duration;
+        }
+        else
+        {
+            quizTitle = "Quiz Not Found";
+        }
+    }
+
+    private void StartQuiz()
+    {
+        Navigation.NavigateTo($"/quiz/{QuizId}");
+    }
+    private void ReturnHome()
+    {
+        Navigation.NavigateTo($"/index");
+    }
+    private void CancelQuiz()
+    {
+        Navigation.NavigateTo("/quizzes");
+    }
+
+    private Quiz? GetQuizDetails(int quizId)
+    {
+      
+        var quizzes = new List<Quiz>
+        {
+            new Quiz { Id = 1, Title = "Introduction to Python", QuestionCount = 5, Duration = 10 },
+            new Quiz { Id = 2, Title = "Python Basics 2", QuestionCount = 3, Duration = 5 },
+            new Quiz { Id = 3, Title = "Cloud Security Basics", QuestionCount = 4, Duration = 15 },
+            new Quiz { Id = 4, Title = "Cloud security basics 2", QuestionCount = 4, Duration = 5 },
+            new Quiz { Id = 5, Title = "Mobile app development",  QuestionCount = 4, Duration = 5 },
+            new Quiz { Id = 6, Title = "Mobile app development 2", QuestionCount = 4, Duration = 10 },
+            new Quiz { Id = 7, Title = "Network Administration basics", QuestionCount = 4, Duration = 5 },
+            new Quiz { Id = 8, Title = "Network Administration 2", QuestionCount = 4, Duration = 5 },
+            new Quiz { Id = 9, Title = "Game Development with unity", QuestionCount = 4, Duration = 10 },
+            new Quiz { Id = 10, Title = "Game Development with unity 2", QuestionCount = 4, Duration = 5 },
+            new Quiz { Id = 11, Title = "Introduction to blockchain", QuestionCount = 4, Duration = 5 },
+            new Quiz { Id = 12, Title = "Introduction to blockchain 2", QuestionCount = 4, Duration = 5 },
+            new Quiz { Id = 13, Title = "Data visualization with tableau", QuestionCount = 4, Duration = 7 },
+            new Quiz { Id = 14, Title = "Data visualization with tableau 2", QuestionCount = 4, Duration = 7 },
+            new Quiz { Id = 15, Title = "Advanced Java", QuestionCount = 4, Duration = 10 },
+            new Quiz { Id = 16, Title = "Advanced Java 2", QuestionCount = 4, Duration = 10 },
+            new Quiz { Id = 17, Title = "Digital marketing", QuestionCount = 4, Duration = 10 },
+            new Quiz { Id = 18, Title = "Digital marketing 2", QuestionCount = 4, Duration = 10 },
+            new Quiz { Id = 19, Title = "Robotics basics", QuestionCount = 4, Duration = 10 },
+            new Quiz { Id = 20, Title = "Robotics basics 2", QuestionCount = 4, Duration = 10 }
+        };
+
+        return quizzes.FirstOrDefault(q => q.Id == quizId);
+    }
+
+    private class Quiz
+    {
+        public int Id { get; set; }
+        public string Title { get; set; }
+        public int QuestionCount { get; set; }
+        public int Duration { get; set; }
+    }
+}
