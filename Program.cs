@@ -4,6 +4,8 @@ using Synaptica.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
+//CourseService (progress tracking)
+builder.Services.AddScoped<CourseService>();
 
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();

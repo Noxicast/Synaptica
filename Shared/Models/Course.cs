@@ -20,6 +20,9 @@ public class Course {
     [Column("instructor_instructorId")]
     public int? InstructorId { get; set; }
 
+    [Column("completedPercentage")]
+    public int CompletedPercentage { get; set; } = 0; //Default progress percent = 0%
+
 
     [ForeignKey("InstructorId")]  //links instructor idf to the instructor table
     public Instructor? Instructor { get; set; }

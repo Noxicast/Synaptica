@@ -17,87 +17,89 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Synaptica
 build_property.RootNamespace = Synaptica
-build_property.ProjectDir = C:\Users\taylo\Source\Repos\SynapticaGRAHHH\
+build_property.ProjectDir = C:\Users\matth\source\repos\SynapticaFinal\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\taylo\Source\Repos\SynapticaGRAHHH
+build_property.MSBuildProjectDirectory = C:\Users\matth\source\repos\SynapticaFinal
 build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/taylo/Source/Repos/SynapticaGRAHHH/App.razor]
+[C:/Users/matth/source/repos/SynapticaFinal/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/taylo/Source/Repos/SynapticaGRAHHH/Pages/CourseDashboard.razor]
+[C:/Users/matth/source/repos/SynapticaFinal/Pages/CourseDashboard.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291cnNlRGFzaGJvYXJkLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/taylo/Source/Repos/SynapticaGRAHHH/Pages/Courses.razor]
+[C:/Users/matth/source/repos/SynapticaFinal/Pages/Courses.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291cnNlcy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/taylo/Source/Repos/SynapticaGRAHHH/Pages/Index.razor]
+[C:/Users/matth/source/repos/SynapticaFinal/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/taylo/Source/Repos/SynapticaGRAHHH/Pages/Profile.razor]
+[C:/Users/matth/source/repos/SynapticaFinal/Pages/Profile.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZmlsZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/taylo/Source/Repos/SynapticaGRAHHH/Pages/Progress.razor]
+[C:/Users/matth/source/repos/SynapticaFinal/Pages/Progress.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZ3Jlc3MucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/taylo/Source/Repos/SynapticaGRAHHH/Pages/QuizRedirect.razor]
+[C:/Users/matth/source/repos/SynapticaFinal/Pages/QuizRedirect.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUXVpelJlZGlyZWN0LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/taylo/Source/Repos/SynapticaGRAHHH/Pages/Quizzes.razor]
+[C:/Users/matth/source/repos/SynapticaFinal/Pages/Quizzes.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUXVpenplcy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/taylo/Source/Repos/SynapticaGRAHHH/Pages/Support.razor]
+[C:/Users/matth/source/repos/SynapticaFinal/Pages/Support.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3VwcG9ydC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/taylo/Source/Repos/SynapticaGRAHHH/Shared/SurveyPrompt.razor]
+[C:/Users/matth/source/repos/SynapticaFinal/Shared/SurveyPrompt.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/taylo/Source/Repos/SynapticaGRAHHH/_Imports.razor]
+[C:/Users/matth/source/repos/SynapticaFinal/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/taylo/Source/Repos/SynapticaGRAHHH/Pages/QuizDetails.razor]
+[C:/Users/matth/source/repos/SynapticaFinal/Pages/QuizDetails.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUXVpekRldGFpbHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-nxb6lk0vls
 
-[C:/Users/taylo/Source/Repos/SynapticaGRAHHH/Shared/MainLayout.razor]
+[C:/Users/matth/source/repos/SynapticaFinal/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-uvzv7i10ki
 
-[C:/Users/taylo/Source/Repos/SynapticaGRAHHH/Shared/NavMenu.razor]
+[C:/Users/matth/source/repos/SynapticaFinal/Shared/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-zl535izisf
 
-[C:/Users/taylo/Source/Repos/SynapticaGRAHHH/Pages/Error.cshtml]
+[C:/Users/matth/source/repos/SynapticaFinal/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/taylo/Source/Repos/SynapticaGRAHHH/Pages/login.cshtml]
+[C:/Users/matth/source/repos/SynapticaFinal/Pages/login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcbG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/taylo/Source/Repos/SynapticaGRAHHH/Pages/register.cshtml]
+[C:/Users/matth/source/repos/SynapticaFinal/Pages/register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNccmVnaXN0ZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/taylo/Source/Repos/SynapticaGRAHHH/Pages/_Host.cshtml]
+[C:/Users/matth/source/repos/SynapticaFinal/Pages/_Host.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0hvc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/taylo/Source/Repos/SynapticaGRAHHH/Pages/_Layout.cshtml]
+[C:/Users/matth/source/repos/SynapticaFinal/Pages/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0xheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

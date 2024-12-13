@@ -1,8 +1,60 @@
-﻿@page "/progress"
+﻿@using Synaptica.Services
+@using Synaptica.Shared.Models
+
+@page "/progress"
+@inject CourseService CourseService
 
 <PageTitle>Progress</PageTitle>
-<h3>Progress</h3>
-<p>This page will just show progress for your courses</p>
-@code {
 
+<h3>Your Course Progress</h3>
+
+@if (courses == null)
+{
+    <p>Loading...</p>
+}
+else if (courses.Count == 0)
+{
+    <p>No progress data available.</p>
+}
+else
+{
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Course Name</th>
+                <th>Completion</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var course in courses)
+            {
+                <tr>
+                    <td>@course.Title</td>
+                    <td>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar"
+                                 style="width: @course.CompletedPercentage%;"
+                                 aria-valuenow="@course.CompletedPercentage"
+                                 aria-valuemin="0"
+                                 aria-valuemax="100">
+                                @course.CompletedPercentage%
+                            </div>
+                        </div>
+                    </td>
+                    <td>@(course.CompletedPercentage >= 100 ? "Completed" : "In Progress")</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private List<Course> courses;
+
+    protected override async Task OnInitializedAsync()
+    {
+        //get courses via CourseService
+        courses = await CourseService.GetCoursesWithProgressAsync();
+    }
 }

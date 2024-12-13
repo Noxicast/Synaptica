@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\taylo\\Source\\Repos\\SynapticaGRAHHH\\Synaptica.csproj": {}
+    "C:\\Users\\matth\\source\\repos\\SynapticaFinal\\Synaptica.csproj": {}
   },
   "projects": {
-    "C:\\Users\\taylo\\Source\\Repos\\SynapticaGRAHHH\\Synaptica.csproj": {
+    "C:\\Users\\matth\\source\\repos\\SynapticaFinal\\Synaptica.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\taylo\\Source\\Repos\\SynapticaGRAHHH\\Synaptica.csproj",
+        "projectUniqueName": "C:\\Users\\matth\\source\\repos\\SynapticaFinal\\Synaptica.csproj",
         "projectName": "Synaptica",
-        "projectPath": "C:\\Users\\taylo\\Source\\Repos\\SynapticaGRAHHH\\Synaptica.csproj",
-        "packagesPath": "C:\\Users\\taylo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\taylo\\Source\\Repos\\SynapticaGRAHHH\\obj\\",
+        "projectPath": "C:\\Users\\matth\\source\\repos\\SynapticaFinal\\Synaptica.csproj",
+        "packagesPath": "C:\\Users\\matth\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\matth\\source\\repos\\SynapticaFinal\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\taylo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\matth\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -39,8 +43,9 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "direct"
-        }
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -57,6 +62,10 @@
             "Microsoft.AspNetCore.Identity": {
               "target": "Package",
               "version": "[2.2.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.0, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
@@ -88,7 +97,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
