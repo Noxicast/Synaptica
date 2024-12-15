@@ -27,47 +27,184 @@
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         background-color: #f9f9f9;
     }
+    /* Container styling */
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* Label styling */
+.input-container label {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Input field styling */
+.input-container input {
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+}
+/* Placeholder color */
+.input-container input::placeholder {
+  color: #aaa;
+}
+
+/* Focus effects */
+.input-container input:focus {
+  border-color: #0078d7;
+  box-shadow: 0 0 5px rgba(0, 120, 215, 0.5);
+}
+
+/* Hover effects */
+.input-container input:hover {
+  border-color: #555;
+}
+
+/* Disabled state */
+.input-container input:disabled {
+  background-color: #f5f5f5;
+  color: #aaa;
+  cursor: not-allowed;
+}
+
+/* Error state example */
+.input-container input.error {
+  border-color: #d93025;
+}
+.input-container input.error:focus {
+  box-shadow: 0 0 5px rgba(217, 48, 37, 0.5);
+}
+
+/* Button Base Styles */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff; /* Text color */
+  background-color: #0078d7; /* Background color */
+  border: none; /* Remove default borders */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  text-align: center;
+  text-decoration: none; /* Remove underline for links styled as buttons */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth effects */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+/* Hover State */
+.btn:hover {
+  background-color: #005cbf; /* Darker shade of blue */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Slightly larger shadow */
+}
+/* Active State */
+.btn:active {
+  background-color: #004494; /* Even darker shade of blue */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Smaller shadow */
+  transform: translateY(2px); /* Simulates button press */
+}
+/* Disabled State */
+.btn:disabled {
+  background-color: #ccc;
+  color: #666;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+/* Additional Variants */
+.btn.btn-primary {
+  background-color: #0078d7;
+  color: #fff;
+}
+.btn.btn-secondary {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.btn.btn-danger {
+  background-color: #d93025;
+  color: #fff;
+}
+
 </style>
+
+
+
+
 <title>Register</title>
 <div class="form">
 <h2>Register</h2>
 
 <form method="post">
     @Html.AntiForgeryToken()
-    <div>
+   <!-- <div>
         <label for="Username">Username</label>
     </div>
     <div style="margin-bottom: 15px ">
-        <input type="text" id="Username" name="Username" value="@Model.Username" />
-    </div>
+      <input type="text" id="Username" name="Username" value="@Model.Username" />
+   </div> -->
 
+    <br>
 
-    <div >
+  <div class="input-container">
+   <!-- <label for="Username">Username</label>-->
+    <input type="text" id="Username" placeholder="Enter Username" name="Username" value="@Model.Username" />
+ </div>
+  <br>
+ 
+  <div class="input-container">
+    <!--<label for="Email">Email</label>-->
+    <input type="email" id="Email" placeholder=" Enter Email" name="Email" value="@Model.Email" />
+ </div>
+  <br>
+
+ <div class="input-container">
+   <!-- <label for="Password">Password</label>-->
+    <input type="password" id="Password" placeholder=" Enter Password" name="Password" />
+ </div>
+
+  <br>
+ <div class="input-container">
+   <!-- <label for="ConfirmPassword">Confirm Password</label>-->
+    <input type="password" id="ConfirmPassword" placeholder=" Enter Confirm Password" name="ConfirmPassword" />
+ </div>
+
+ <br>
+   <!-- <div >
         <label for="Email">Email</label>
     </div>
     <div style="margin-bottom: 15px">
         <input type="email" id="Email" name="Email" value="@Model.Email" />
-    </div>
+    </div> -->
 
 
-    <div >
-        <label for="Password">Password</label>
+
+    <!--<div >
+       <!-- <label for="Password">Password</label>
     </div>
     <div style="margin-bottom: 15px">
         <input type="password" id="Password" name="Password" />
-    </div>
+    </div>-->
 
 
-    <div >
+   <!-- <div >
         <label for="ConfirmPassword">Confirm Password</label>
     </div>
      <div style ="margin-bottom: 20px">
         <input type="password" id="ConfirmPassword" name="ConfirmPassword" />
-    </div>
+    </div> -->
 
 
-    <button type="submit" style="margin-block-end: 10px">Register</button>
-    <button type="button" onclick="window.location.href='/login'">Already have an account? Login</button>
+    <button  class="btn" type="submit" style="margin-block-end: 10px">Register</button>
+    <button  class="btn" type="button" onclick="window.location.href='/login'">Already have an account? Login</button>
 </form>
 </div>
 @if (!string.IsNullOrEmpty(Model.ErrorMessage))
