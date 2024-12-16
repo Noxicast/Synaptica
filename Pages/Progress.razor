@@ -1,4 +1,4 @@
-﻿@using Synaptica.Services
+@using Synaptica.Services
 @using Synaptica.Shared.Models
 
 @page "/progress"
@@ -7,54 +7,93 @@
 <PageTitle>Progress</PageTitle>
 
 <h3>Your Course Progress</h3>
+<p>Example Progress Page</p>
 
-@if (courses == null)
-{
-    <p>Loading...</p>
-}
-else if (courses.Count == 0)
-{
-    <p>No progress data available.</p>
-}
-else
-{
-    <table class="table table-striped">
-        <thead>
-            <tr>
-                <th>Course Name</th>
-                <th>Completion</th>
-                <th>Status</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var course in courses)
-            {
-                <tr>
-                    <td>@course.Title</td>
-                    <td>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar"
-                                 style="width: @course.CompletedPercentage%;"
-                                 aria-valuenow="@course.CompletedPercentage"
-                                 aria-valuemin="0"
-                                 aria-valuemax="100">
-                                @course.CompletedPercentage%
-                            </div>
-                        </div>
-                    </td>
-                    <td>@(course.CompletedPercentage >= 100 ? "Completed" : "In Progress")</td>
-                </tr>
-            }
-        </tbody>
-    </table>
-}
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Course Name</th>
+            <th>Completion</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Introduction to Python</td>
+            <td>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar"
+                         style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                        75%
+                    </div>
+                </div>
+            </td>
+            <td>In Progress</td>
+        </tr>
+        <tr>
+            <td>Cloud Security Basics</td>
+            <td>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar"
+                         style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                        50%
+                    </div>
+                </div>
+            </td>
+            <td>In Progress</td>
+        </tr>
+        <tr>
+            <td>Robotics basics</td>
+            <td>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar"
+                         style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                        90%
+                    </div>
+                </div>
+            </td>
+            <td>In Progress</td>
+        </tr>
+        <tr>
+            <td>Advanced Java</td>
+            <td>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar"
+                         style="width: 40%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
+                        40%
+                    </div>
+                </div>
+            </td>
+            <td>In Progress</td>
+        </tr>
+    </tbody>
+</table>
 
-@code {
-    private List<Course> courses;
-
-    protected override async Task OnInitializedAsync()
-    {
-        //get courses via CourseService
-        courses = await CourseService.GetCoursesWithProgressAsync();
+<style>
+    .table {
+        width: 100%;
+        border-collapse: collapse;
     }
-}
+
+        .table th, .table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        .table th {
+            background-color: #f4f4f4;
+        }
+
+    .progress {
+        background-color: #e9ecef;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+
+    .progress-bar {
+        background-color: #28a745;
+        color: #fff;
+        text-align: center;
+    }
+</style>
