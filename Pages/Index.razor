@@ -1,4 +1,5 @@
-﻿@page "/index"
+﻿@page "/"
+@page "/index"
 
 @using Synaptica.Data
 @using Synaptica.Shared.Models
@@ -10,131 +11,87 @@
 
 <PageTitle>Synaptica Home</PageTitle>
 
-<!-- Welcome Message -->
-<div class="welcome-message">
+<link rel="stylesheet" href="css/site.css" />
 
-    <p class="intro-text">
-        Welcome to Synaptica, your one-stop platform for online learning! Explore interactive courses, track your progress, and enhance your skillset. You can use the sidebar to navigate between pages.
-    </p>
+<div class="dashboard-container">
+    <section class="welcome-section">
+        <h1 class="welcome-title">Welcome back, @userName! 👋</h1>
+        <p class="intro-text">
+            Welcome to Synaptica, your personalized learning journey starts here. Explore interactive courses, track your progress, and enhance your skills through our comprehensive learning platform.
+        </p>
+    </section>
 
-    <h2>Hello, @userName!</h2>
-    @if (userCourses?.Count > 0)
-    {
-        <p>Here are the courses you're enrolled in:</p>
-    }
-    else
-    {
-        <p>You are not enrolled in any courses yet.</p>
-        <button class="btn-enroll" @onclick="NavigateToEnrollmentPage">Browse Available Courses</button>
-    }
-</div>
-
-@if (userCourses != null && userCourses.Count > 0)
-{
-    <h3>Your Courses</h3>
-    <div class="course-list">
-        @foreach (var course in userCourses)
+    <section class="courses-section">
+        @if (userCourses?.Count > 0)
         {
-            <div class="course-item">
-                <h4>@(course.Title ?? "No Title Available")</h4>
-                <p>@(course.Description ?? "No Description Available")</p>
-                <p><strong>Duration:</strong> @(course.Duration ?? "No Duration Provided")</p>
-                <button class="btn-view" @onclick="() => NavigateToCourseDashboard(course.CourseId)">View</button>
+            <h2 class="section-title">Your Learning Journey</h2>
+            <div class="courses-grid">
+                @foreach (var course in userCourses)
+                {
+                    <div class="course-card">
+                        <h3 class="course-title">@(course.Title ?? "No Title Available")</h3>
+                        <p class="course-description">@(course.Description ?? "No Description Available")</p>
+                        <div class="course-meta">
+                            <span>⏱️ Duration: @(course.Duration ?? "No Duration Provided")</span>
+                        </div>
+                        <button class="btn btn-primary" @onclick="() => NavigateToCourseDashboard(course.CourseId)">
+                            Continue Learning →
+                        </button>
+                    </div>
+                }
             </div>
         }
-    </div>
-}
-
-<style>
-    .welcome-message {
-        background-color: #f9f9f9;
-        border: 1px solid #ddd;
-        border-radius: 5px;
-        padding: 1rem;
-        margin-bottom: 1.5rem;
-        text-align: center;
-    }
-
-    .welcome-message h2 {
-        font-size: 1.8rem;
-        margin-bottom: 0.5rem;
-    }
-
-    .course-list {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 1.5rem;
-    }
-
-    .course-item {
-        border: 1px solid #ddd;
-        border-radius: 5px;
-        padding: 1rem;
-        background-color: #fff;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        flex: 1 1 calc(33.333% - 1.5rem);
-        max-width: calc(33.333% - 1.5rem);
-    }
-
-    .course-item h4 {
-        font-size: 1.5rem;
-        margin-bottom: 0.5rem;
-    }
-
-    .course-item p {
-        margin: 0.5rem 0;
-        color: #555;
-    }
-
-    .btn-view, .btn-enroll {
-        background-color: #007bff;
-        color: white;
-        border: none;
-        padding: 0.5rem 1rem;
-        border-radius: 5px;
-        cursor: pointer;
-        text-align: center;
-    }
-
-    .btn-enroll:hover, .btn-view:hover {
-        background-color: #0056b3;
-    }
-</style>
+        else
+        {
+            <div class="empty-state">
+                <p class="empty-state-text">You haven't enrolled in any courses yet.</p>
+                <button class="btn btn-primary" @onclick="NavigateToEnrollmentPage">
+                    Browse Available Courses →
+                </button>
+            </div>
+        }
+    </section>
+</div>
 
 @code {
-
-    private string? userName;
+    private string? userName = "Guest";
     private List<Course>? userCourses;
 
     protected override async Task OnInitializedAsync()
     {
         try
         {
-            // Fetch the user's name
-            var user = await DbContext.Users.FindAsync(sessionService.LoggedInUser);
-            userName = user?.Name ?? "User";
+            // Fetch the logged-in user details
+            if (sessionService.LoggedInUser > 0)
+            {
+                var user = await DbContext.Users.FindAsync(sessionService.LoggedInUser);
+                userName = user?.Name ?? "Guest";
 
-            // Fetch only the courses where the user is enrolled
-            userCourses = await (from enrollment in DbContext.Enrollments
-                                 join course in DbContext.Courses on enrollment.CourseId equals course.CourseId
-                                 where enrollment.UserId == sessionService.LoggedInUser
-                                 select course).ToListAsync();
+                // Fetch courses the user is enrolled in
+                userCourses = await (from enrollment in DbContext.Enrollments
+                                     join course in DbContext.Courses on enrollment.CourseId equals course.CourseId
+                                     where enrollment.UserId == sessionService.LoggedInUser
+                                     select course).ToListAsync();
+            }
+            else
+            {
+                userCourses = new List<Course>();
+            }
         }
         catch (Exception ex)
         {
-            Console.WriteLine("Error fetching user data or courses: " + ex.Message);
+            Console.WriteLine($"Error fetching user data or courses: {ex.Message}");
+            userCourses = new List<Course>();
         }
     }
 
     private void NavigateToCourseDashboard(int courseId)
     {
-        // Navigate to the course dashboard page, passing the courseId
         NavigationManager.NavigateTo($"/course-home/{courseId}");
     }
 
     private void NavigateToEnrollmentPage()
     {
-        // Navigate to the courses enrollment page
         NavigationManager.NavigateTo("/courses");
     }
 }

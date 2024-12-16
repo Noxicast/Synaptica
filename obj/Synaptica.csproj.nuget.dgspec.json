@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\praju\\OneDrive\\Desktop\\Project 4+\\Synaptica\\Synaptica.csproj": {}
+    "D:\\Project\\Synaptica\\Synaptica.csproj": {}
   },
   "projects": {
-    "C:\\Users\\praju\\OneDrive\\Desktop\\Project 4+\\Synaptica\\Synaptica.csproj": {
+    "D:\\Project\\Synaptica\\Synaptica.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\praju\\OneDrive\\Desktop\\Project 4+\\Synaptica\\Synaptica.csproj",
+        "projectUniqueName": "D:\\Project\\Synaptica\\Synaptica.csproj",
         "projectName": "Synaptica",
-        "projectPath": "C:\\Users\\praju\\OneDrive\\Desktop\\Project 4+\\Synaptica\\Synaptica.csproj",
-        "packagesPath": "C:\\Users\\praju\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\praju\\OneDrive\\Desktop\\Project 4+\\Synaptica\\obj\\",
+        "projectPath": "D:\\Project\\Synaptica\\Synaptica.csproj",
+        "packagesPath": "C:\\Users\\saura\\.nuget\\packages\\",
+        "outputPath": "D:\\Project\\Synaptica\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\praju\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\saura\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -75,6 +75,14 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[9.0.0, )"
+            },
+            "MudBlazor": {
+              "target": "Package",
+              "version": "[7.15.0, )"
+            },
+            "Radzen.Blazor": {
+              "target": "Package",
+              "version": "[5.6.15, )"
             }
           },
           "imports": [
